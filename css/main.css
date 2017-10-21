@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'CallunaSansRegular';
+    src: url('../fonts/CallunaSansRegular-webfont.woff2') format('woff2'),
+         url('../fonts/CallunaSansRegular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page-title {
+    margin-top: 1%;
+    margin-bottom: 4%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-experience {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-contact {
+    margin-top: 3%;
+    margin-bottom: 6%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro-header {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(49,49,49,0.1);
+    border-bottom: 1px solid rgba(49,49,49,0.1);
+    margin-bottom: 5%;
+}
+
+.intro-header-experience {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(49,49,49,0.1);
+    border-bottom: 1px solid rgba(49,49,49,0.1);
+    margin-bottom: 0%;
+}
+
+.intro-header h5 {
+    margin-bottom: 10px;
+}
+
+#last-sentence-intro {
+    margin-bottom: 0px;
+}
+
+.left {
+    border-right: 1px solid rgba(49,49,49,0.1);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.right {
+    padding-left: 5%;
+}
+
+.plane {
+    text-align: right;
+    position: relative;
+}
+
+.satellite {
+    text-align: left;
+    position: relative;
+    margin-top: 15px;
+}
+
+.skills-label {
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 0rem;
+}
+
+.skill {
+    margin-top: 10px;
+}
+
+.chess img{
+    max-width: 250px;
+    text-align: center;
+}
+
+.panels {
+    margin-top: 20px;
+}
+
+.contact-links {
+    text-align: center;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: none;
+    background: #313131;
+}
+
+.ui-widget * { outline: none; }​
+
+#tabs-container {
+    height: 300px;
+    overflow: auto;
+}
+
+.tab-left p {
+    height: 100%;
+}
+
+.school {
+    font-size: 1em;
+}
+
+.firehose {
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: newspaper;
+}
+
+ul a {
+    text-decoration: underline;
+}
+
