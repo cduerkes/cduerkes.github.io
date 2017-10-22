@@ -95,8 +95,19 @@
     margin-top: 20px;
 }
 
-.contact-links {
+.links-container {
     text-align: center;
+}
+
+.contact-links {
+    margin: 20px auto;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+    .links-container { padding-left: 100px; }
+    .contact-links { text-align: center; }
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
