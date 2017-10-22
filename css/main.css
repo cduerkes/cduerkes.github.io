@@ -88,7 +88,25 @@
 
 .chess img {
     max-width: 100%;
+}
 
+.panel-image-container {
+    display: none;
+}
+
+.panel-text-container { 
+    width: 91.3333333333%;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+.panel-text-container.seven.columns { width: 91.3333333333%; }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+.panel-image-container { display: block; }
+.panel-text-container.seven.columns { width: 56.6666666667%; }
 }
 
 .panels {
