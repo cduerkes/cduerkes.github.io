@@ -57,13 +57,12 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row cards">
           <div class="left eight columns">
-            <p>In October, I graduated from a web development bootcamp with the Firehose Project. The bootcamp culminated in a team project, where I collaborated with a few other developers to build a fully functioning chess app as part of an agile team. I personally developed the movement and obstruction logic for chess pieces and the ability to dynamically update piece locations through a RESTful JSON API. <p id="last-sentence-intro">Click through this simple website (also my creation) to learn more about what I can do for you, and for links to my GitHub repositories, a downloadable resume, and a way to get in touch.</p>
-            <div class="plane"><img src="img/plane_s2.png"></div>
+            <p>In October, I graduated from a web development bootcamp with the Firehose Project. The bootcamp culminated in a team project where I collaborated with a few other developers to build a fully functioning chess app as part of an agile team. I personally developed the movement and obstruction logic for chess pieces and the ability to dynamically update piece locations through a RESTful JSON API. <p>Click through this simple website (also my creation) to learn more about what I can do for you, and for links to my GitHub repositories, a downloadable resume, and a way to get in touch.</p>
           </div>
 
-          <div class="right four columns skills">
+          <div class="right four columns">
             <div class=skills-label>
               <h5>Skills</h5>
             </div>
@@ -83,6 +82,12 @@
             </ul>
           </div> <!--RIGHT COLUMN -->
         </div> <!--LEFT/RIGHT COLUMNS ROW -->
+        <div class="row">
+          <div class="four columns">&nbsp</div>
+          <div class="eight columns">
+            <div class="plane"><img src="img/plane_s2.png"></div>
+          </div>
+        </div>
       </div> <!--CONTAINER -->
     </div> <!--SECTION 1 -->
 
@@ -95,81 +100,67 @@
         </div>
         <div class="row">
           <div class="intro-header-experience twelve columns">
-            <h5>I learned how to think about code and build applications while completing the Firehose curriculum and contributing to the development of an online chess application.</h5>
+            <h5>How I learned how to think about code and build applications.</h5>
           </div>
         </div>
         <div class="row">
-          <div class="twelve columns">
-            <div id="tabs-container">
-              <div id="tabs">
-                <ul>
-                  <li><a href="#tabs-1">Problem Solving</a></li>
-                  <li><a href="#tabs-2">Code Quality</a></li>
-                  <li><a href="#tabs-3">Collaboration</a></li>
-                  <li><a href="#tabs-4">Code Samples</a></li>
-                </ul>
-                <div id="tabs-1">
-                  <div class="row panels">
-                    <div class="panel-image-container three columns">
-                      <div class="chess"><img src="img/piece1.png"></div>
-                    </div>
-                    <div class="panel-text-container seven columns">
-                      <p>During the six-month long course with the Firehose Project, I learned how to build out basic CRUD Rails apps using patterns that are common across multiple programming languages and frameworks, including object-oriented design, Model View Controller architecture and database design and modification using migrations.</p><p>I also learned about algorithm and computer science fundamentals. Coding challenges like image blur and depth first search helped me beef up my object-oriented programming skills, and learn about multidimensional arrays, linked lists, trees, stacks and queues.</p>
-                    </div>
-                    <div class="one column">&nbsp</div>
-                  </div>
-                </div>
-                <div id="tabs-2">
-                  <div class="row panels">
-                    <div class="panel-image-container three columns">
-                      <div class="chess"><img src="img/piece2.png"></div>
-                    </div>
-                    <div class="panel-text-container seven columns">
-                      <p>I realize that code quality matters. And while I do not have experience working with large code bases, I can imagine the ongoing headaches that might result from poorly written code.</p>
-                      <p>One of the aha moments I had while building out the chess apps came during the final refactoring stage. I learned the importance of naming classes and methods and how to find and extract logic to create code that is easy to read and maintain.</p>
-                      <p><strong>Books I am reading:</strong> Practical Object-Oriented Design in Ruby (Sandi Metz), JavaScript: The Good Parts (Douglas Crockford)</p>
-                    </div>
-                    <div class="one column">&nbsp</div>
-                  </div>
-                </div>
-                <div id="tabs-3">
-                  <div class="row panels">
-                    <div class="panel-image-container three columns">
-                      <div class="chess"><img src="img/piece3.png"></div>
-                    </div>
-                    <div class="panel-text-container seven columns">
-                      <div>
-                        <p>The team of developers I worked with remotely to create the chess application spanned 17 times zones. Some of the agile methods we used while building the app included:</p>
-                      </div>
-                        <ul><strong>
-                          <li>Stand-up meetings/sprint planning (Google Hangouts)</li>
-                          <li>Task boards (Trello)</li>
-                          <li>TDD (RSpec)</li>
-                          <li>Continuous integration and deployment (Codeship)</li>
-                          <li>Pull requests/code reviews (GitHub)</li></strong>
-                        </ul>
-                    </div>
-                    <div class="one column">&nbsp</div>
-                  </div>
-                </div>
-                <div id="tabs-4">
-                  <div class="row panels">
-                    <div class="panel-image-container three columns">
-                      <div class="chess"><img src="img/piece4.png"></div>
-                    </div>
-                    <div class="panel-text-container seven columns">
-                      <div>
-                        <strong><p>Here are a couple of code samples that I created for the chess application:</p></strong>
-                      </div>
-                        <ul id="code samples">
-                          <li>A method for determining whether obstructions exist between a chess piece and a requested position on the chess board. See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/models/pieces/piece.rb#L7" target="_blank">code sample</a> on GitHub.</li>
-                          <li>The ability to dynamically update piece locations using jQuery UI draggable and droppable and a RESTful JSON API. (We were initially updating piece locations using ordinary CRUD operations.) See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/assets/javascripts/game.js" target="_blank">code sample</a> on GitHub.</li>
-                        </ul>
-                    </div>
-                    <div class="one column">&nbsp</div>
-                  </div>
-                </div>
+          <div class="twelve columns panel-nav">
+            <a class="button" id="problem-solving">Problem Solving</a>
+            <a class="button" id="code-quality">Code Quality</a>
+            <a class="button" id="collaboration">Collaboration</a>
+            <a class="button" id="code-samples">Code Samples</a>
+          </div>
+        </div>
+        <div class=panel-container>
+          <div class="problem-solving-panel">
+            <div class="panel-image-container three columns">
+              <div class="chess"><img src="img/piece1.png"></div>
+            </div>
+            <div class="panel-text-container eight columns">
+              <p>During the six-month long course with the Firehose Project, I learned how to build out basic CRUD Rails apps using patterns that are common across multiple programming languages and frameworks, including object-oriented design, Model View Controller architecture and database design and modification using migrations.</p><p>I also learned about algorithm and computer science fundamentals. Coding challenges like image blur and depth first search helped me beef up my object-oriented programming skills, and learn about multidimensional arrays, linked lists, trees, stacks and queues.</p>
+            </div>
+          </div>
+          <div class="code-quality-panel">
+            <div class="panel-image-container three columns">
+              <div class="chess"><img src="img/piece2.png"></div>
+            </div>
+            <div class="panel-text-container seven columns">
+              <p>I realize that code quality matters. And while I do not have experience working with large code bases, I can imagine the ongoing headaches that might result from poorly written code.</p>
+              <p>One of the aha moments I had while building out the chess apps came during the final refactoring stage. I learned the importance of naming classes and methods and how to find and extract logic to create code that is easy to read and maintain.</p>
+              <p><strong>Books I am reading:</strong> Practical Object-Oriented Design in Ruby (Sandi Metz), JavaScript: The Good Parts (Douglas Crockford)</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="collaboration-content">
+            <div class="panel-image-container three columns">
+              <div class="chess"><img src="img/piece3.png"></div>
+            </div>
+            <div class="panel-text-container seven columns">
+              <div>
+                <p>The team of developers I worked with remotely to create the chess application spanned 17 times zones. Some of the agile methods we used while building the app included:</p>
               </div>
+                <ul><strong>
+                  <li>Stand-up meetings/sprint planning (Google Hangouts)</li>
+                  <li>Task boards (Trello)</li>
+                  <li>TDD (RSpec)</li>
+                  <li>Continuous integration and deployment (Codeship)</li>
+                  <li>Pull requests/code reviews (GitHub)</li></strong>
+                </ul>
+            </div>
+          </div>
+          <div class="code-samples-content">
+            <div class="panel-image-container three columns">
+              <div class="chess"><img src="img/piece4.png"></div>
+            </div>
+            <div class="panel-text-container seven columns">
+              <div>
+                <strong><p>Here are a couple of code samples that I created for the chess application:</p></strong>
+              </div>
+                <ul id="code samples">
+                  <li>A method for determining whether obstructions exist between a chess piece and a requested position on the chess board. See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/models/pieces/piece.rb#L7" target="_blank">code sample</a> on GitHub.</li>
+                  <li>The ability to dynamically update piece locations using jQuery UI draggable and droppable and a RESTful JSON API. (We were initially updating piece locations using ordinary CRUD operations.) See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/assets/javascripts/game.js" target="_blank">code sample</a> on GitHub.</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -179,11 +170,11 @@
     <div class="section" id="section3">
       <div class="container" >
         <div class="row">
-          <div class="page-contact twelve columns">
+          <div class="page-education twelve columns">
             <h1><strong>Education</strong></h1>
           </div>
         </div>
-        <div class="row">
+        <div class="row cards">
           <div class="left education seven columns">
             <div class="firehose"><strong>Firehose Project, 2017</strong></div>
             <h6>The curriculum at Firehose covered Ruby, Ruby on Rails, JavaScript, agile team work, test-driven development, algorithms and computer science fundamentals, HTML, CSS and responsive design.</h6>
@@ -232,19 +223,18 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" 
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-  <script>
-  $( function() {
-    $( "#tabs" ).tabs({
-      heightStyle: "content"
-    });
-  } );
-  </script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('#fullpage').fullpage({
-        responsiveWidth: 1100
+      $(".panel-nav a#problem-solving").click(function(){
+        if ($('.problem-solving-panel').is(':visible')) {
+           alert("not hidden!");
+           $('.problem-solving-panel').hide('slide',{direction:'left'},1000);
+        } else {
+           
+           $('.problem-solving-panel').show('slide',{direction:'left'},1000);
+        }
       });
     });
   </script>
