@@ -58,11 +58,11 @@
         </div>
 
         <div class="row cards">
-          <div class="left eight columns">
+          <div class="left seven columns">
             <p>In October, I graduated from a web development bootcamp with the Firehose Project. The bootcamp culminated in a team project where I collaborated with a few other developers to build a fully functioning chess app as part of an agile team. I personally developed the movement and obstruction logic for chess pieces and the ability to dynamically update piece locations through a RESTful JSON API. <p>Click through this simple website (also my creation) to learn more about what I can do for you, and for links to my GitHub repositories, a downloadable resume, and a way to get in touch.</p>
           </div>
 
-          <div class="right four columns">
+          <div class="right five columns">
             <div class=skills-label>
               <h5>Skills</h5>
             </div>
@@ -111,24 +111,35 @@
             <a class="button" id="code-samples">Code Samples</a>
           </div>
         </div>
-        <div class=panel-container>
-          <div class="problem-solving-panel">
-            <div class="panel-image-container three columns">
-              <div class="chess"><img src="img/piece1.png"></div>
+        <div class="row">
+          <div class="panel-container twelve columns">
+            <div class="problem-solving-panel">
+              <div class="panel-text-container">
+                <p>During the six-month long course with the Firehose Project, I learned how to build out basic CRUD Rails apps using patterns that are common across multiple programming languages and frameworks, including object-oriented design, Model View Controller architecture and database design and modification using migrations.</p><p>I also learned about algorithm and computer science fundamentals. Coding challenges like image blur and depth first search helped me beef up my object-oriented programming skills, and learn about multidimensional arrays, linked lists, trees, stacks and queues.</p>
+              </div>
             </div>
-            <div class="panel-text-container eight columns">
-              <p>During the six-month long course with the Firehose Project, I learned how to build out basic CRUD Rails apps using patterns that are common across multiple programming languages and frameworks, including object-oriented design, Model View Controller architecture and database design and modification using migrations.</p><p>I also learned about algorithm and computer science fundamentals. Coding challenges like image blur and depth first search helped me beef up my object-oriented programming skills, and learn about multidimensional arrays, linked lists, trees, stacks and queues.</p>
+            <div class="code-quality-panel">
+              <div class="panel-text-container">
+                <p>I realize that code quality matters. And while I do not have experience working with large code bases, I can imagine the ongoing headaches that might result from poorly written code.</p>
+                <p>One of the aha moments I had while building out the chess apps came during the final refactoring stage. I learned the importance of naming classes and methods and how to find and extract logic to create code that is easy to read and maintain.</p>
+                <p><strong>Books I am reading:</strong> Practical Object-Oriented Design in Ruby (Sandi Metz), JavaScript: The Good Parts (Douglas Crockford)</p>
+              </div>
+            </div>
+            <div class="collaboration-panel">
+              <div class="panel-text-container">
+                <div>
+                  <p>The team of developers I worked with remotely to create the chess application spanned 17 times zones. Some of the agile methods we used while building the app included:</p>
+                </div>
+                  <ul><strong>
+                    <li>Stand-up meetings/sprint planning (Google Hangouts)</li>
+                    <li>Task boards (Trello)</li>
+                    <li>TDD (RSpec)</li>
+                    <li>Continuous integration and deployment (Codeship)</li>
+                    <li>Pull requests/code reviews (GitHub)</li></strong>
+                  </ul>
+              </div>
             </div>
           </div>
-          <div class="code-quality-panel">
-            <div class="panel-image-container three columns">
-              <div class="chess"><img src="img/piece2.png"></div>
-            </div>
-            <div class="panel-text-container seven columns">
-              <p>I realize that code quality matters. And while I do not have experience working with large code bases, I can imagine the ongoing headaches that might result from poorly written code.</p>
-              <p>One of the aha moments I had while building out the chess apps came during the final refactoring stage. I learned the importance of naming classes and methods and how to find and extract logic to create code that is easy to read and maintain.</p>
-              <p><strong>Books I am reading:</strong> Practical Object-Oriented Design in Ruby (Sandi Metz), JavaScript: The Good Parts (Douglas Crockford)</p>
-            </div>
           </div>
         </div>
         <div class="row">
@@ -228,13 +239,44 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $(".panel-nav a#problem-solving").click(function(){
-        if ($('.problem-solving-panel').is(':visible')) {
-           alert("not hidden!");
-           $('.problem-solving-panel').hide('slide',{direction:'left'},1000);
-        } else {
-           
-           $('.problem-solving-panel').show('slide',{direction:'left'},1000);
-        }
+        panels = ['.code-quality-panel', '.collaboration-panel', '.code-samples-panel']
+        $.each(panels, function(index, value) {
+          if ($(value).is(':visible')) {
+             alert("not hidden!");
+             $(value).hide('slide',{direction:'left'}, 200)};
+        }); 
+
+        $('.problem-solving-panel').show('slide',{direction:'left'}, 200);
+      });
+      $(".panel-nav a#code-quality").click(function(){
+        panels = ['.problem-solving-panel', '.collaboration-panel', '.code-samples-panel']
+        $.each(panels, function(index, value) {
+          if ($(value).is(':visible')) {
+             alert("not hidden!");
+             $(value).hide('slide',{direction:'left'}, 200)};
+        }); 
+
+        $('.code-quality-panel').show('slide',{direction:'left'}, 200);
+      });
+      $(".panel-nav a#collaboration").click(function(){
+        panels = ['.code-quality-panel', '.problem-solving-panel', '.code-samples-panel']
+        $.each(panels, function(index, value) {
+          if ($(value).is(':visible')) {
+             alert("not hidden!");
+             $(value).hide('slide',{direction:'left'}, 200)};
+        }); 
+
+        $('.collaboration-panel').show('slide',{direction:'left'}, 200);
+      });
+      $(".panel-nav a#code-samples").click(function(){
+        panels = ['.code-quality-panel', '.collaboration-panel', '.problem-solving-panel']
+        $.each(panels, function(index, value) {
+          if ($(value).is(':visible')) {
+             alert("not hidden!");
+             $(value).hide('slide',{direction:'left'}, 200)};
+        }); 
+
+        $('.code-samples-panel').show('slide',{direction:'left'}, 200);
       });
     });
   </script>
