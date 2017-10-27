@@ -152,6 +152,8 @@
 .collaboration-panel {
     display: none;
     height: 100%;
+    position: relative;
+    margin-top: -10px;
 }
 
 .code-samples-panel {
@@ -223,7 +225,7 @@
 }
 
 .contact-links {
-    margin: 20px auto 15% auto;
+    margin: 20px auto 10% auto;
 }
 
 /* Larger than phablet (also point when grid becomes active) */
