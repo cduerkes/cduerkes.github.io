@@ -159,8 +159,18 @@
     height: 100%;
 }
 
+#collaboration-ul {
+    position: relative;
+    margin-top: -1em;
+}
+
+#grey-text {
+    position: relative;
+    margin-top: -1em;
+}
+
 .panel-container {
-    margin: 5% auto 0% auto;
+    margin: 4% auto 0% auto;
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -213,7 +223,7 @@
 }
 
 .contact-links {
-    margin: 20px auto;
+    margin: 20px auto 10% auto;
 }
 
 /* Larger than phablet (also point when grid becomes active) */
