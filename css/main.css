@@ -28,6 +28,7 @@ div.slideOutTab {
     height: 43px;
     top: 200px;
     left: -107px;
+    display: none;
 }
 
 div.slideOutTab a {
@@ -43,6 +44,15 @@ div.slideOutTab a:hover {
     background-position: 0 -43px;
 }
 
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+  div.slideOutTab {
+    display: block;
+  }
+
+}
+
 .cards {
     display: -ms-flex;
     display: -webkit-flex;
@@ -50,6 +60,7 @@ div.slideOutTab a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+
   .row {
     flex-direction: column;
   }
