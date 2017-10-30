@@ -48,4 +48,21 @@ $(document).ready(function() {
     $('.code-samples-panel').show('slide',{direction:'left'}, 100);
   });
 
+    // This is a shortcut to bind both mouseOver and mouseOut
+    $('div.slideOutTab').hover(function() {
+        // Animate out when hovered, stopping all previous animations
+        $(this)
+            .stop(true, false)
+            .animate({
+                left: 0
+            }, 400);
+    }, function() {
+        // Animate back in when not hovered, stopping all previous animations
+        $(this)
+            .stop(true, false)
+            .animate({
+                left: -107
+            }, 400);
+    });
+
 });

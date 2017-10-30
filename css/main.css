@@ -22,6 +22,27 @@ body {
     margin-bottom: 0%;
 }
 
+div.slideOutTab {
+    position: fixed;
+    width: 150px;
+    height: 43px;
+    top: 200px;
+    left: -107px;
+}
+
+div.slideOutTab a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -999em;
+    background: 0 0 url('../img/email.gif') no-repeat;
+}
+
+div.slideOutTab a:hover {
+    background-position: 0 -43px;
+}
+
 .cards {
     display: -ms-flex;
     display: -webkit-flex;
