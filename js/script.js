@@ -99,10 +99,10 @@ $(document).ready(function() {
   var allMods = $(".slide-box");
 
   allMods.each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-          el.addClass("already-visible");
-      }
+    var el = $(el);
+    if (el.visible(true)) {
+        el.addClass("already-visible");
+    }
   });
 
   win.scroll(function(event) {

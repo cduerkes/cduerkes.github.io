@@ -340,16 +340,16 @@ ul a {
 
 .come-in {
   transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
+  animation: come-in 1.2s ease forwards;
 }
 
 .come-in:nth-child(odd) {
-  animation-duration: 0.6s;
+  animation-duration: 1s;
 }
 
 .already-visible {
-  transform: translateY(0);
-  animation: none;
+  transform: translateY(25px);
+  animation: come-in 1.2s ease forwards;
 }
 
 @keyframes come-in {
