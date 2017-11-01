@@ -22,6 +22,20 @@ body {
     margin-bottom: 0%;
 }
 
+.bgimg-1 {
+    background-image: url(../img/bgimg1.jpg);
+    min-height: 100%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+
 div.slideOutTab {
     position: fixed;
     width: 150px;
@@ -322,5 +336,9 @@ div.slideOutTab a:hover {
 
 ul a {
     text-decoration: underline;
+}
+
+.fade {
+    opacity: 0;
 }
 
