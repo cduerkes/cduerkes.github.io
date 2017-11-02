@@ -106,7 +106,7 @@ div.slideOutTab a:hover {
 }
 
 .page-education {
-    margin-top: 8%;
+    margin-top: 4%;
     margin-bottom: 3%;
     text-align: center;
     text-transform: uppercase;
@@ -123,6 +123,86 @@ div.slideOutTab a:hover {
     text-align: center;
     padding-top: 10px;
     margin-bottom: 5%;
+}
+
+.intro-p {
+    background:#a7d2cb;
+    height: auto;
+}
+
+
+@media (min-width: 1000px) {
+
+    .intro-p {
+        height: 350px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    .intro-p {
+        height: 300px;
+    }
+
+}
+
+.experience-p {
+    background: #fedcd2;
+}
+
+.left.education-p {
+    background: #e9c893;
+}
+
+.right.education-p {
+    height: auto;
+    background: #72d3a0;
+}
+
+@media (min-width: 1000px) {
+
+    .right.education-p {
+        height: 225px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    .right.education-p {
+        height: 200px;
+    }
+
+}
+
+.education-p {
+    background: #f2f2f2;
+}
+
+.skills {
+    background: #b793a0;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1000px) {
+
+    .skills {
+        margin-left: -78px;
+        margin-top: 180px;
+    }
+
+}
+
+.skills-label {
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 0rem;
+}
+
+.skill {
+    margin-top: 10px;
 }
 
 .intro-header-experience {
@@ -175,23 +255,12 @@ div.slideOutTab a:hover {
 .plane {
     text-align: center;
     position: relative;
-    margin-top: 15px;
 }
 
 .satellite {
-    text-align: left;
+    text-align: center;
     position: relative;
     margin-top: 15px;
-}
-
-.skills-label {
-    position: relative;
-    text-transform: uppercase;
-    margin-bottom: 0rem;
-}
-
-.skill {
-    margin-top: 10px;
 }
 
 .chess img {
