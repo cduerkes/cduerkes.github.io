@@ -18,14 +18,14 @@ $(document).ready(function() {
             .stop(true, false)
             .animate({
                 left: 0
-            }, 400);
+            }, 300);
     }, function() {
         // Animate back in when not hovered, stopping all previous animations
         $(this)
             .stop(true, false)
             .animate({
                 left: -107
-            }, 400);
+            }, 300);
     });
   (function($) {
 

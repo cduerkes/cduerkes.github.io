@@ -26,7 +26,7 @@ div.slideOutTab {
     position: fixed;
     width: 150px;
     height: 43px;
-    top: 200px;
+    top: 42%;
     left: -107px;
     display: none;
 }
