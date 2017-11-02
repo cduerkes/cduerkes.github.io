@@ -22,20 +22,6 @@ body {
     margin-bottom: 0%;
 }
 
-.bgimg-1 {
-    background-image: url(../img/bgimg1.jpg);
-    min-height: 100%;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-}
-
 div.slideOutTab {
     position: fixed;
     width: 150px;
@@ -204,33 +190,6 @@ div.slideOutTab a:hover {
     max-width: 100%;
 }
 
-.panel-nav {
-    display: inline-block;
-    text-align: center;
-}
-
-.problem-solving-panel {
-    display: none;
-    height: 100%;
-}
-
-.code-quality-panel {
-    display: none;
-    height: 100%;
-}
-
-.collaboration-panel {
-    display: none;
-    height: 100%;
-    position: relative;
-    margin-top: -12px;
-}
-
-.code-samples-panel {
-    display: none;
-    height: 100%;
-}
-
 #collaboration-ul {
     position: relative;
     margin-top: -1em;
@@ -239,69 +198,6 @@ div.slideOutTab a:hover {
 #grey-text {
     position: relative;
     margin-top: -1em;
-}
-
-.panel-container {
-    margin: 4% auto 0% auto;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    padding: 3em 2em 2em 2.5em;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
-    box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
-    z-index:0;
-    -webkit-transition: all 0.1s ease;
-    -moz-transition: all 0.1s ease;
-    -o-transition: all 0.1s ease;
-    transition: all 0.1s ease;
-}
-
-.panel-container:hover {
-    z-index:999;
-    box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
-    -webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
-    -moz-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
-}
-
-
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-    .panel-container { 
-        height: 250px; 
-    }
-}
-
-.panel-nav a {
-    margin: 10px 20px;
-}
-
-.panel-image-container {
-    display: none;
-}
-
-.panel-text-container { 
-    width: 100%;
-    padding-left: 7px; 
-}
-
-.problem-solving-content, .code-quality-content, .collaboration-content, .code-samples-content {
-    display: none;
-    margin-top: 3rem;
-}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-.panel-text-container.seven.columns { width: 91.3333333333%; }
-.panel-text-container p { padding-right: 20px }
-
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-.panel-image-container { display: block; }
-.panel-text-container.seven.columns { width: 56.6666666667%; padding-left: 0px; }
 }
 
 .links-container {
