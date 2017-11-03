@@ -153,7 +153,7 @@ div.slideOutTab a:hover {
 }
 
 .left.education-p {
-    background: #ffb042;
+    background: #ffb754;
 }
 
 .right.education-p {
@@ -262,6 +262,7 @@ div.slideOutTab a:hover {
     text-align: center;
     position: relative;
     margin-top: 15px;
+    z-index: 2;
 }
 
 .spacecraft2 {
@@ -269,10 +270,7 @@ div.slideOutTab a:hover {
     position: relative;
     margin-top: 35px;
     margin-right: -260px;
-}
-
-.chess img {
-    max-width: 100%;
+    z-index: 2;
 }
 
 #collaboration-ul {
