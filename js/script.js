@@ -5,10 +5,10 @@ $(document).ready(function() {
     $('.plane').animate({ right: 0, top: 0 }, 400);
   });
 
-  $('.satellite, .satellite2').hover(function() { //mouse in
-    $('.satellite, .satellite2').animate({ left: '10px', top: '20px' }, 400);
+  $('.spacecraft, .spacecraft2').hover(function() { //mouse in
+    $('.spacecraft, .spacecraft2').animate({ left: '10px', top: '20px' }, 400);
   }, function() { //mouse out
-    $('.satellite, .satellite2').animate({ left: 0, top: 0 }, 400);
+    $('.spacecraft, .spacecraft2').animate({ left: 0, top: 0 }, 400);
   });
 
     // This is a shortcut to bind both mouseOver and mouseOut
