@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'CallunaSansRegular';
+    src: url('../fonts/CallunaSansRegular-webfont.woff2') format('woff2'),
+         url('../fonts/CallunaSansRegular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    body {
+    }
+}
+
+.intro.row.cards {
+    margin-top: 15rem;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+.section-title h1 {
+    font-size: 10rem;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+div.slideOutTab {
+    position: fixed;
+    width: 150px;
+    height: 43px;
+    top: 42%;
+    left: -107px;
+    display: none;
+}
+
+div.slideOutTab a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -999em;
+    background: 0 0 url('../img/email.gif') no-repeat;
+}
+
+div.slideOutTab a:hover {
+    background-position: 0 -43px;
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+  div.slideOutTab {
+    /* display: block; */
+  }
+
+}
+
+.cards {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .row {
+    flex-direction: column;
+  }
+
+  .left.six.columns {
+    width: 100%;
+  }
+
+  .left.seven.columns {
+    width: 100%;
+  }
+
+  .left.eight.columns {
+    width: 100%;
+  }
+
+  .right.three.columns {
+    width: 100%;
+  }
+
+  .right.four.columns {
+    width: 100%;
+  }
+
+  .right.five.columns {
+    width: 100%;
+  }
+
+  .right.six.columns {
+    width: 100%;
+  }
+
+  .left, .right {
+    margin-bottom: 20px;
+  }
+}
+
+.page-experience {
+    margin-top: -7%;
+    margin-bottom: 6%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-education {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-contact {
+    margin-top: 8%;
+    margin-bottom: 6%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro-header {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 5%;
+}
+
+.intro-header {
+    margin-top: 3rem;
+}
+
+.intro-p {
+    background: #35936c;
+    color: white;
+    height: auto;
+}
+
+
+@media (min-width: 1000px) {
+
+    .intro-p {
+        height: 350px;
+        /* margin-top: -140px; */
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    .intro-p {
+        height: 300px;
+    }
+
+}
+
+.experience-p {
+    background: #35936E;
+}
+
+.experience-p.left {
+    flex: 1 100%;
+    background-color: steelblue;
+    color: white;
+}
+
+.experience-p.six.columns.right {
+    background-color: lightgrey;
+    color: #373737;
+}
+
+.left.education-p {
+    background: #ffb754;
+}
+
+.right.education-p {
+    height: auto;
+    background: #72d3a0;
+}
+
+@media (min-width: 1000px) {
+
+    .right.education-p {
+        height: 225px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    .right.education-p {
+        height: 200px;
+    }
+
+}
+
+.education-p {
+    background: #f2f2f2;
+}
+
+.skills {
+    background: #e9c3b8;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1000px) {
+
+    .skills {
+    }
+
+}
+
+.skills-label {
+    position: relative;
+    margin-bottom: 0rem;
+}
+
+.skill {
+    margin-top: 10px;
+}
+
+.intro-header-experience {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0%;
+}
+
+.intro-header h5 {
+    margin-bottom: 5px;
+}
+
+.left {
+
+    font:  white;
+    min-height: 445px;
+    flex: 1 50%;
+    border-radius: 0px;
+    padding: 3em 3em;
+    margin-bottom: 100px;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
+    z-index:0;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+
+.left:hover, .right:hover {
+    z-index:999;
+    box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
+    -moz-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
+}
+
+.right {
+    min-height: 445px;
+    flex: 1 50%;
+    padding: 4em 3em 3em 3em;
+    margin-bottom: 100px;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
+    z-index:0;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.plane {
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.spacecraft {
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    z-index: 2;
+}
+
+.spacecraft2 {
+    text-align: center;
+    position: relative;
+    margin-right: -260px;
+    z-index: 2;
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .plane {
+        text-align: center;
+        position: relative;
+        display: block;
+    }
+
+    .spacecraft2 {
+        text-align: center;
+        position: relative;
+        display: none;
+    }
+}
+
+#collaboration-ul {
+    position: relative;
+    margin-top: -1em;
+}
+
+#grey-text {
+    position: relative;
+    margin-top: -1em;
+}
+
+.links-container {
+    text-align: center;
+}
+
+.contact-links {
+    margin: 20px auto 10% auto;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+    .links-container { padding-left: 100px; }
+    .contact-links { text-align: center; }
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: none;
+    background: #313131;
+}
+
+.ui-widget * { outline: none; }​
+
+.school {
+    font-size: 1em;
+}
+
+.firehose {
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: newspaper;
+}
+
+ul a {
+    text-decoration: underline;
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1.2s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 1s;
+}
+
+.already-visible {
+  transform: translateY(25px);
+  animation: come-in 1.2s ease forwards;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
