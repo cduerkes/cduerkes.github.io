@@ -7,25 +7,73 @@
 }
 
 body {
-    background-color: white;
+    background-color: #f2f2f2;
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
     body {
-        background-color: #f2f2f2;
     }
 }
 
-.page-title {
-    margin-top: 1%;
-    margin-bottom: 4%;
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+/* Navigation Settings */
+nav {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    color: #757575;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 520px) {
+
+    nav li {
+        padding: 24px 4px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+}
+
+.intro.row.cards {
+    margin-top: 15rem;
+}
+
+.intro-title h1 {
+    font-size: 10rem;
+    margin-top: 15%;
+    margin-bottom: 0%;
     text-align: center;
     text-transform: uppercase;
 }
 
-.page-title h1 {
-    margin-top: 15%;
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+.section-title h1 {
+    font-size: 7rem;
+    margin-top: 10%;
     margin-bottom: 0%;
 }
 
@@ -55,7 +103,7 @@ div.slideOutTab a:hover {
 @media (min-width: 1000px) {
 
   div.slideOutTab {
-    display: block;
+    /* display: block; */
   }
 
 }
@@ -106,22 +154,22 @@ div.slideOutTab a:hover {
 }
 
 .page-experience {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: -7%;
+    margin-bottom: 6%;
     text-align: center;
     text-transform: uppercase;
 }
 
 .page-education {
-    margin-top: 10%;
-    margin-bottom: 3%;
+    margin-top: -3%;
+    margin-bottom: 6%;
     text-align: center;
     text-transform: uppercase;
 }
 
 .page-contact {
     margin-top: 8%;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -129,11 +177,17 @@ div.slideOutTab a:hover {
 .intro-header {
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+}
+
+.intro-name {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .intro-p {
-    background:#a7d2cb;
+    background: #35936c;
+    color: white;
     height: auto;
 }
 
@@ -142,7 +196,7 @@ div.slideOutTab a:hover {
 
     .intro-p {
         height: 350px;
-        margin-top: -140px;
+        /* margin-top: -140px; */
     }
 
 }
@@ -156,17 +210,38 @@ div.slideOutTab a:hover {
 }
 
 .experience-p {
-    background: #fedcd2;
+    background: #35936E;
+}
+
+.experience-p.left {
+    flex: 1 100%;
+    background-color: steelblue;
+    color: white;
+}
+
+.experience-p.six.columns.right {
+    background-color: lightgrey;
+    color: #373737;
 }
 
 .left.education-p {
-    background: #ffb754;
+    flex: 1 33.33%;
+    background: #bb5751;
+    color: white;
 }
 
 .right.education-p {
+    flex: 1 33.33%;
     height: auto;
-    background: #72d3a0;
+    background: white;
 }
+
+.right.education-p2 {
+    flex: 1 33.33%;
+    height: auto;
+    background: steelblue;
+}
+
 
 @media (min-width: 1000px) {
 
@@ -189,7 +264,7 @@ div.slideOutTab a:hover {
 }
 
 .skills {
-    background: #b793a0;
+    background: #e9c3b8;
     position: relative;
     z-index: 1;
 }
@@ -197,15 +272,12 @@ div.slideOutTab a:hover {
 @media (min-width: 1000px) {
 
     .skills {
-        margin-left: -78px;
-        margin-top: 20px;
     }
 
 }
 
 .skills-label {
     position: relative;
-    text-transform: uppercase;
     margin-bottom: 0rem;
 }
 
@@ -224,13 +296,14 @@ div.slideOutTab a:hover {
 }
 
 .left {
-    border-radius: 5px;
-    padding: 2em 2em 2em 2.5em;
-    margin-right: 30px;
-    margin-bottom: 2em;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
+
+    font:  white;
+    min-height: 445px;
+    flex: 1 50%;
+    border-radius: 0px;
+    padding: 3em 3em;
+    margin-bottom: 100px;
     -moz-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
-    box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
     z-index:0;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -247,12 +320,11 @@ div.slideOutTab a:hover {
 }
 
 .right {
-    border-radius: 5px;
-    padding: 2em 2em 2em 2.5em;
-    margin-bottom: 2em;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
+    min-height: 445px;
+    flex: 1 50%;
+    padding: 3em 3em 3em 3em;
+    margin-bottom: 100px;
     -moz-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
-    box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
     z-index:0;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -276,7 +348,6 @@ div.slideOutTab a:hover {
 .spacecraft2 {
     text-align: center;
     position: relative;
-    margin-top: 35px;
     margin-right: -260px;
     z-index: 2;
     display: none;
@@ -292,10 +363,7 @@ div.slideOutTab a:hover {
     .spacecraft2 {
         text-align: center;
         position: relative;
-        margin-top: 35px;
-        margin-right: -260px;
-        z-index: 2;
-        display: block;
+        display: none;
     }
 }
 
@@ -335,8 +403,11 @@ div.slideOutTab a:hover {
     font-size: 1em;
 }
 
+.school h4 {
+    margin-bottom: 0;
+}
+
 .firehose {
-    text-transform: uppercase;
     font-size: 1em;
     text-align: newspaper;
 }
