@@ -16,8 +16,54 @@ body {
     }
 }
 
+/* This class is added on scroll */
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+/* Navigation Settings */
+nav {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    color: #757575;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 520px) {
+
+    nav li {
+        padding: 24px 4px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+}
+
 .intro.row.cards {
     margin-top: 15rem;
+}
+
+.intro-title h1 {
+    font-size: 10rem;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .section-title {
@@ -27,7 +73,7 @@ body {
 }
 
 .section-title h1 {
-    font-size: 10rem;
+    font-size: 7rem;
     margin-top: 10%;
     margin-bottom: 0%;
 }
@@ -116,7 +162,7 @@ div.slideOutTab a:hover {
 }
 
 .page-education {
-    margin-top: 10%;
+    margin-top: -3%;
     margin-bottom: 6%;
     text-align: center;
     text-transform: uppercase;
@@ -132,11 +178,12 @@ div.slideOutTab a:hover {
 .intro-header {
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 
-.intro-header {
-    margin-top: 3rem;
+.intro-name {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .intro-p {
@@ -179,13 +226,23 @@ div.slideOutTab a:hover {
 }
 
 .left.education-p {
-    background: #ffb754;
+    flex: 1 33.33%;
+    background: #bb5751;
+    color: white;
 }
 
 .right.education-p {
+    flex: 1 33.33%;
     height: auto;
-    background: #72d3a0;
+    background: white;
 }
+
+.right.education-p2 {
+    flex: 1 33.33%;
+    height: auto;
+    background: steelblue;
+}
+
 
 @media (min-width: 1000px) {
 
@@ -347,8 +404,11 @@ div.slideOutTab a:hover {
     font-size: 1em;
 }
 
+.school h4 {
+    margin-bottom: 0;
+}
+
 .firehose {
-    text-transform: uppercase;
     font-size: 1em;
     text-align: newspaper;
 }

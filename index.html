@@ -50,19 +50,34 @@
 </head>
 <body>
 
+  <nav class="fixed">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Experience</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="section" id="section1">
     <div class="container">
       <div class="row">
-        <div class="section-title twelve columns">
+        <div class="intro-name twelve columns">
+          <h6><strong>CHRISTOPHER DUERKES</strong></h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="intro-title twelve columns">
           <h1><strong>Web Developer</strong></h1>
         </div>
       </div>
 
       <div class="row">
         <div class="intro-header twelve columns">
-          <h5>Located in Warwick, NY</h5>
+          <h5>Christopher Duerkes | Warwick, NY</h5>
         </div>
       </div>
 
@@ -77,13 +92,13 @@
         </div>
       </div>
 
-      <div class="intro row cards">
-        <div class="left intro-p slide-box seven columns">
+      <div class="intro slide-box row cards">
+        <div class="left intro-p seven columns">
           <h1>About</h1>
           <p>In October, I graduated from a web development bootcamp with the Firehose Project. The bootcamp culminated in a team project where I collaborated with a few other developers to build a fully functioning chess app as part of an agile team. I personally developed the movement and obstruction logic for chess pieces and the ability to dynamically update piece locations through a RESTful JSON API. <p>Click through this simple website (also my creation) to learn more about what I can do for you and for links to my GitHub repositories, a downloadable resume, and a way to get in touch.</p>
         </div>
 
-        <div class="right skills slide-box five columns">
+        <div class="right skills five columns">
           <div class=skills-label>
             <h1>Skills</h1>
           </div>
@@ -133,7 +148,7 @@
       </div>
       <div class="row cards">
         <div class="experience-p six columns left slide-box">
-          <h5>Collaboration</h5>
+          <h1>Working on an agile team</h1>
           <div>
             <p>The team of developers I worked with remotely to create the chess application spanned 17 times zones. Some of the agile methods we used while building the app included:</p>
           </div>
@@ -145,13 +160,13 @@
           </ul>
         </div>
         <div class="experience-p six columns right slide-box">
-          <h5>Code samples</h5>
+          <h4>Code samples</h4>
           <div>
             <strong><p>Here are a couple of code samples that I created for the chess application:</p></strong>
           </div>
           <ul id="code samples">
             <li>A method for determining whether obstructions exist between a chess piece and a requested position on the chess board. See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/models/pieces/piece.rb#L7" target="_blank">code sample</a> on GitHub.</li>
-            <li>The ability to dynamically update piece locations using jQuery UI draggable and droppable and a RESTful JSON API. (We initially updated piece locations by performing basic CRUD operations.) See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/assets/javascripts/game.js" target="_blank">code sample</a> on GitHub.</li>
+            <li>The ability to dynamically update piece locations using jQuery UI draggable and droppable and a RESTful JSON API. See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/assets/javascripts/game.js" target="_blank">code sample</a> on GitHub.</li>
           </ul>
         </div>
       </div>
@@ -173,17 +188,19 @@
       </div>
       <div class="row cards">
         <div class="left education-p slide-box seven columns">
-          <div class="firehose"><strong>Firehose Project, 2017</strong></div>
+          <div class="firehose"><strong><h1>Firehose Project, 2017</h1></strong></div>
           <h6>The curriculum at Firehose covered Ruby, Ruby on Rails, JavaScript, agile team work, test-driven development, algorithms and computer science fundamentals, HTML, CSS and responsive design.</h6>
-          <strong>During this intensive, 24-week program, I learned how to:</strong>
+        </div>
+        <div class="right education-p slide-box four columns">
+          <strong><h4>During this intensive, 24-week program, I learned how to:</h4></strong>
           <p>Be a developer capable of breaking complex problems into manageable tasks.</p>
           <p>Build out basic CRUD Rails apps involving mailers, validations, image uploading on AWS S3, and nested RESTful routes following standard Rails conventions.</p>
           <p>Create unit tests with RSpec using test-driven development.</p>
           <p>Create automated software tests using RSpec and standard testing tools like FactoryGirl for database population and CodeShip for continuous integration.</p>
         </div>
-        <div class="right education-p slide-box four columns">
-          <div class="school"><strong>UNIVERSITY OF FLORIDA, 2008<br />MSc., Soil and Water Science</strong></div><br />
-          <div class="school"><strong>COLUMBIA UNIVERSITY, 2003<br />BSc., Environmental Biology</strong></div><br />
+        <div class="right education-p2 slide-box four columns">
+          <div class="school"><strong><h4>University of Florida</h4></strong>MSc., Soil and Water Science (2008)</div><br />
+          <div class="school"><strong><h4>Columbia University</h4></strong>BSc., Environmental Biology (2003)</div><br />
         </div>
       </div>
     </div>
