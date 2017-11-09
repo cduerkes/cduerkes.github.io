@@ -225,21 +225,16 @@ div.slideOutTab a:hover {
 }
 
 .left.education-p {
-    flex: 1 33.33%;
-    background: #bb5751;
+    flex: 1 50%;
+    background: #ff8b61;
     color: white;
 }
 
 .right.education-p {
-    flex: 1 33.33%;
+    flex: 1 50%;
     height: auto;
-    background: white;
-}
+    background: #B4DBC0;
 
-.right.education-p2 {
-    flex: 1 33.33%;
-    height: auto;
-    background: steelblue;
 }
 
 
@@ -309,6 +304,10 @@ div.slideOutTab a:hover {
     -moz-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
     transition: all 0.1s ease;
+}
+
+#about {
+    color: white;
 }
 
 
