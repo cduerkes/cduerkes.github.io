@@ -186,8 +186,7 @@ div.slideOutTab a:hover {
 }
 
 .intro-p {
-    background: #35936c;
-    color: white;
+    background: #B4DBC0;
     height: auto;
 }
 
@@ -226,14 +225,14 @@ div.slideOutTab a:hover {
 
 .left.education-p {
     flex: 1 50%;
-    background: #ff8b61;
+    background: #35936c;
     color: white;
 }
 
 .right.education-p {
     flex: 1 50%;
     height: auto;
-    background: #B4DBC0;
+    background: #e9c3b8;
 
 }
 
@@ -259,7 +258,7 @@ div.slideOutTab a:hover {
 }
 
 .skills {
-    background: #e9c3b8;
+    background: #ff8b61;
     position: relative;
     z-index: 1;
 }
@@ -307,9 +306,16 @@ div.slideOutTab a:hover {
 }
 
 #about {
-    color: white;
+    color: #373737;
 }
 
+hr {
+    max-width: 50px;
+    margin-left: 0px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border: 2px solid #373737;
+}
 
 .left:hover, .right:hover {
     z-index:999;
