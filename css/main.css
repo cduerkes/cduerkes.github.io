@@ -7,26 +7,99 @@
 }
 
 body {
-    background-color: white;
+    background-color: #f2f2f2;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    h1 { font-size: 3rem; }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    h1 { font-size: 5rem; }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
     body {
-        background-color: #f2f2f2;
     }
 }
 
-.page-title {
-    margin-top: 1%;
-    margin-bottom: 4%;
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+/* Navigation Settings */
+nav {
+    display: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    color: #757575;
+    text-transform: uppercase;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    nav {
+        display: block;
+        width: 100%;
+        height: 70px;
+        background: #fff;
+        text-align: center;
+    }
+}
+
+.card-title {
+    font-family: 'EB Garamond', serif;
+}
+
+.intro.row.cards {
+    margin-top: 15%;
+}
+
+.intro-title h1 {
+    font-size: 5rem;
+    margin-top: 15%;
+    margin-bottom: 0%;
     text-align: center;
     text-transform: uppercase;
 }
 
-.page-title h1 {
-    margin-top: 15%;
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .intro-title h1 { font-size: 7rem; }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .intro-title h1 { font-size: 10rem; }
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+.section-title h1 {
+    font-size: 5rem;
+    margin-top: 10%;
     margin-bottom: 0%;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .section-title h1 { font-size: 7rem; }
 }
 
 div.slideOutTab {
@@ -55,7 +128,7 @@ div.slideOutTab a:hover {
 @media (min-width: 1000px) {
 
   div.slideOutTab {
-    display: block;
+    /* display: block; */
   }
 
 }
@@ -106,22 +179,22 @@ div.slideOutTab a:hover {
 }
 
 .page-experience {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: -7%;
+    margin-bottom: 6%;
     text-align: center;
     text-transform: uppercase;
 }
 
 .page-education {
-    margin-top: 10%;
-    margin-bottom: 3%;
+    margin-top: -3%;
+    margin-bottom: 6%;
     text-align: center;
     text-transform: uppercase;
 }
 
 .page-contact {
     margin-top: 8%;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -129,11 +202,16 @@ div.slideOutTab a:hover {
 .intro-header {
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+}
+
+.intro-name {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .intro-p {
-    background:#a7d2cb;
+    background: #B4DBC0;
     height: auto;
 }
 
@@ -142,7 +220,7 @@ div.slideOutTab a:hover {
 
     .intro-p {
         height: 350px;
-        margin-top: -140px;
+        /* margin-top: -140px; */
     }
 
 }
@@ -156,17 +234,33 @@ div.slideOutTab a:hover {
 }
 
 .experience-p {
-    background: #fedcd2;
+    background: #35936E;
+}
+
+.experience-p.left {
+    flex: 1 100%;
+    background-color: steelblue;
+    color: white;
+}
+
+.experience-p.six.columns.right {
+    background-color: lightgrey;
+    color: black;
 }
 
 .left.education-p {
-    background: #ffb754;
+    flex: 1 50%;
+    background: #35936c;
+    color: white;
 }
 
 .right.education-p {
+    flex: 1 50%;
     height: auto;
-    background: #72d3a0;
+    background: #e9c3b8;
+
 }
+
 
 @media (min-width: 1000px) {
 
@@ -189,7 +283,7 @@ div.slideOutTab a:hover {
 }
 
 .skills {
-    background: #b793a0;
+    background: #ff8b61;
     position: relative;
     z-index: 1;
 }
@@ -197,15 +291,12 @@ div.slideOutTab a:hover {
 @media (min-width: 1000px) {
 
     .skills {
-        margin-left: -78px;
-        margin-top: 20px;
     }
 
 }
 
 .skills-label {
     position: relative;
-    text-transform: uppercase;
     margin-bottom: 0rem;
 }
 
@@ -224,13 +315,14 @@ div.slideOutTab a:hover {
 }
 
 .left {
-    border-radius: 5px;
-    padding: 2em 2em 2em 2.5em;
-    margin-right: 30px;
-    margin-bottom: 2em;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
+
+    font:  white;
+    min-height: 460px;
+    flex: 1 50%;
+    border-radius: 0px;
+    padding: 3em 4em 4em 4em;
+    margin-bottom: 10%;
     -moz-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
-    box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
     z-index:0;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -238,6 +330,33 @@ div.slideOutTab a:hover {
     transition: all 0.1s ease;
 }
 
+#about {
+    color: black;
+}
+
+.intro-p hr, .skills hr {
+    max-width: 50px;
+    margin-left: 0px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+}
+
+hr {
+    max-width: 50px;
+    margin-left: 0px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border: 2px solid #f2f2f2;
+}
+
+.left.intro-p {
+    flex: 1 50%;
+}
+
+.right.skills {
+    flex: 1 50%;
+}
 
 .left:hover, .right:hover {
     z-index:999;
@@ -247,12 +366,11 @@ div.slideOutTab a:hover {
 }
 
 .right {
-    border-radius: 5px;
-    padding: 2em 2em 2em 2.5em;
-    margin-bottom: 2em;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
+    min-height: 460px;
+    flex: 1 50%;
+    padding: 3em 4em 3em 4em;
+    margin-bottom: 10%;
     -moz-box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
-    box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
     z-index:0;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -276,7 +394,6 @@ div.slideOutTab a:hover {
 .spacecraft2 {
     text-align: center;
     position: relative;
-    margin-top: 35px;
     margin-right: -260px;
     z-index: 2;
     display: none;
@@ -292,10 +409,7 @@ div.slideOutTab a:hover {
     .spacecraft2 {
         text-align: center;
         position: relative;
-        margin-top: 35px;
-        margin-right: -260px;
-        z-index: 2;
-        display: block;
+        display: none;
     }
 }
 
@@ -326,7 +440,7 @@ div.slideOutTab a:hover {
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     border: none;
-    background: #313131;
+    background: black;
 }
 
 .ui-widget * { outline: none; }​
@@ -335,8 +449,11 @@ div.slideOutTab a:hover {
     font-size: 1em;
 }
 
+.school h4 {
+    margin-bottom: 0;
+}
+
 .firehose {
-    text-transform: uppercase;
     font-size: 1em;
     text-align: newspaper;
 }
