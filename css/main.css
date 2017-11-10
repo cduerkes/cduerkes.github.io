@@ -63,6 +63,14 @@ nav li a {
     font-family: 'EB Garamond', serif;
 }
 
+.card-context-box {
+    display: flex;
+}
+
+.card-context-box > div {
+    margin: auto;
+}
+
 .intro.row.cards {
     margin-top: 15%;
 }
@@ -137,6 +145,7 @@ div.slideOutTab a:hover {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 1000px) {
@@ -288,9 +297,68 @@ div.slideOutTab a:hover {
     z-index: 1;
 }
 
-@media (min-width: 1000px) {
+.skills-wide {
+    display: none;
+}
+
+@media (min-width: 1100px) {
 
     .skills {
+        display: none;
+    }
+
+    .skill {
+        box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+        border-radius: 1px;
+        border-bottom: 1px solid #ccc;
+        background: #ff8b61
+    }
+
+    .skill:hover {
+        z-index:999;
+        box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
+        -webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
+        -moz-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 10px 0;
+    }
+
+    .skill:nth-last-child(-n + 3):nth-child(3n + 1), /* first element of the last row */
+    .skill:nth-last-child(-n + 3):nth-child(3n + 1) ~ .skill { /* all its following elements */
+        margin-bottom: 0;
+    }
+
+    .skills-wide.right:hover {
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        -moz-box-shadow:none;
+    }
+
+    .skills-wide {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .skills-wide > div {
+        display: flex;
+        box-sizing: border-box;
+        margin-left: 7px;
+        margin-bottom: 7px;
+        width: 30%;
+        text-align: center;
+        border-top: none; 
+    }
+
+    .skills-wide > div > p {
+        margin: auto;
+    }
+
+    .right.skills-wide {
+        padding: 0;
+        -moz-box-shadow: none;
     }
 
 }
@@ -300,9 +368,7 @@ div.slideOutTab a:hover {
     margin-bottom: 0rem;
 }
 
-.skill {
-    margin-top: 10px;
-}
+
 
 .intro-header-experience {
     text-align: center;
@@ -348,14 +414,6 @@ hr {
     margin-top: 4rem;
     margin-bottom: 2rem;
     border: 2px solid #f2f2f2;
-}
-
-.left.intro-p {
-    flex: 1 50%;
-}
-
-.right.skills {
-    flex: 1 50%;
 }
 
 .left:hover, .right:hover {
@@ -478,5 +536,17 @@ ul a {
 
 @keyframes come-in {
   to { transform: translateY(0); }
+}
+
+.trim-on-small-screens {
+    display: none;
+}
+
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .trim-on-small-screens {
+        display: block;
+    }
 }
 
