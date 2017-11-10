@@ -270,7 +270,6 @@ div.slideOutTab a:hover {
 
 }
 
-
 @media (min-width: 1000px) {
 
     .right.education-p {
@@ -283,6 +282,18 @@ div.slideOutTab a:hover {
 
     .right.education-p {
         height: 200px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .right.education-p {
+        height: 225px;
+    }
+
+    .right.experience-p, .right.education-p {
+        margin-left: 7px;
     }
 
 }
@@ -311,7 +322,7 @@ div.slideOutTab a:hover {
         box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
         border-radius: 1px;
         border-bottom: 1px solid #ccc;
-        background: #ff8b61
+        background: #ff8b61;
     }
 
     .skill:hover {
