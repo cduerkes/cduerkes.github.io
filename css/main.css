@@ -46,6 +46,7 @@ nav li {
 nav li a {
     color: #757575;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* Larger than phablet */
@@ -72,7 +73,7 @@ nav li a {
 }
 
 .intro.row.cards {
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 .intro-title h1 {
@@ -146,6 +147,23 @@ div.slideOutTab a:hover {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 7px;
+}
+
+.code-samples {
+    grid-column: 4 / span 2;
+    grid-row: 7 / span 3;
+}
+
+.recommendation-one {
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 4;
 }
 
 @media screen and (max-width: 1000px) {
@@ -248,8 +266,8 @@ div.slideOutTab a:hover {
 
 .experience-p.left {
     flex: 1 100%;
-    background-color: steelblue;
-    color: white;
+    background-color: lightgrey;
+    color: black;
 }
 
 .experience-p.six.columns.right {
@@ -501,25 +519,11 @@ hr {
     transition: all 0.1s ease;
 }
 
-.plane {
-    text-align: center;
-    position: relative;
-    display: none;
-}
-
 .spacecraft {
     text-align: center;
     position: relative;
     margin-top: 15px;
     z-index: 2;
-}
-
-.spacecraft2 {
-    text-align: center;
-    position: relative;
-    margin-right: -260px;
-    z-index: 2;
-    display: none;
 }
 
 @media (min-width: 750px) {
@@ -577,8 +581,7 @@ hr {
 }
 
 .firehose {
-    font-size: 1em;
-    text-align: newspaper;
+    color: white;
 }
 
 ul a {
