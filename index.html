@@ -41,7 +41,6 @@
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Favicon
@@ -62,73 +61,78 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <div class="container">
-    <div class="row">
-      <div class="intro-name twelve columns">
-        <h6><a id="home"><strong>CHRISTOPHER DUERKES</strong></a></h6>
-      </div>
-    </div>
-    <div class="row">
-      <div class="intro-title twelve columns">
-        <h1><strong>Web Developer</strong></h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="intro-header twelve columns">
-        <h5>Christopher Duerkes | Warwick, NY</h5>
-      </div>
-    </div>
-
-    <div class="intro slide-box row cards">
-      <div class="left intro-p six columns">
-        <a id="about"><strong><h1 class="card-title">About</h1></strong></a>
-        <hr />
-        <p>As a full-stack developer, I have solid object-oriented programming skills (primarily Ruby/Rails), front-end development skills and a commitment to best practices (test-driven development, continuous integration, agile methods).</p>
-        <p class="trim-on-small-screens">Lately, I've been getting to know JavaScript ES6 syntax and the ReactJS library and have already begun transitioning parts of this site to the new CSS Grid.</p>
-      </div>
-
-      <div class="right skills five columns">
-        <div class=skills-label>
-          <strong><h1 class="card-title">Skills</h1></strong>
-          <hr />
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="intro-name twelve columns">
+          <h6><a id="home"><strong>CHRISTOPHER DUERKES</strong></a></h6>
         </div>
-        <ul>
-          <li>
-            <div class="skill"><strong>Languages:</strong> Ruby, JavaScript, HTML, CSS</div>
-          </li>
-          <li>
-            <div class="skill"><strong>Libraries/Frameworks:</strong> Ruby on Rails, jQuery, Bootstrap</div>
-          </li>
-          <li>
-            <div class="skill"><strong>Testing:</strong> RSpec (Unit Testing), Codeship (Continuous Integration and Deployment)</div>
-          </li>
-          <li>
-            <div class="skill"><strong>Version Control:</strong> Git/GitHub</div>
-          </li>
-        </ul>
-      </div> <!--RIGHT COLUMN -->
+      </div>
+      <div class="row">
+        <div class="intro-title twelve columns">
+          <h1><strong>Web Developer</strong></h1>
+        </div>
+      </div>
 
-      <div class="right skills-wide six columns">
-            <div class="skill"><p><strong>Ruby</strong></p></div>
-            <div class="skill"><p><strong>JavaScript</strong></p></div>
-            <div class="skill"><p><strong>HTML5</strong></p></div>
-            <div class="skill"><p><strong>CSS3</strong></p></div>
-            <div class="skill"><p><strong>Ruby on Rails</strong></p></div>
-            <div class="skill"><p><strong>jQuery</strong></p></div>
-            <div class="skill"><p><strong>RSpec</strong></p></div>
-            <div class="skill"><p><strong>Codeship</strong></p></div>
-            <div class="skill"><p><strong>Git</strong></p></div>
+      <div class="row">
+        <div class="intro-subheading twelve columns">
+          <h5>Christopher Duerkes | Warwick, NY</h5>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      </div> <!--RIGHT COLUMN -->
-    </div> <!--LEFT/RIGHT COLUMNS ROW -->
-  </div> <!--CONTAINER -->
+  <section>
+    <div class="container">
+      <div class="intro slide-box flex row">
+        <div class="left intro-p six columns">
+          <a id="about"><strong><h1 class="card-title">About</h1></strong></a>
+          <hr />
+          <p>As a full-stack developer, I have solid object-oriented programming skills (primarily Ruby/Rails), front-end development skills and a commitment to best practices (test-driven development, continuous integration, agile methods).</p>
+          <p>Lately, I've been getting to know JavaScript ES6 syntax and the ReactJS library and have already begun transitioning parts of this site to the new CSS Grid.</p>
+        </div>
 
-  <div class="container">
-    <div class="row cards slide-box grid">
-      <div class="code-samples">      
-        <div class="">
+        <div class="right skills six columns">
+          <div class=skills-label>
+            <strong><h1 class="card-title">Skills</h1></strong>
+            <hr />
+          </div>
+          <ul>
+            <li>
+              <div class="skill"><strong>Languages:</strong> Ruby, JavaScript, HTML, CSS</div>
+            </li>
+            <li>
+              <div class="skill"><strong>Libraries/Frameworks:</strong> Ruby on Rails, jQuery, Bootstrap</div>
+            </li>
+            <li>
+              <div class="skill"><strong>Testing:</strong> RSpec (Unit Testing), Codeship (Continuous Integration and Deployment)</div>
+            </li>
+            <li>
+              <div class="skill"><strong>Version Control:</strong> Git/GitHub</div>
+            </li>
+          </ul>
+        </div> <!--RIGHT COLUMN -->
+
+        <div class="right skills-wide six columns">
+              <div class="skill"><p><strong>Ruby</strong></p></div>
+              <div class="skill"><p><strong>JavaScript</strong></p></div>
+              <div class="skill"><p><strong>HTML5</strong></p></div>
+              <div class="skill"><p><strong>CSS3</strong></p></div>
+              <div class="skill"><p><strong>Ruby on Rails</strong></p></div>
+              <div class="skill"><p><strong>jQuery</strong></p></div>
+              <div class="skill"><p><strong>RSpec</strong></p></div>
+              <div class="skill"><p><strong>Codeship</strong></p></div>
+              <div class="skill"><p><strong>Git</strong></p></div>
+
+        </div> <!--RIGHT COLUMN -->
+      </div> <!--LEFT/RIGHT COLUMNS ROW -->
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row slide-box grid">
+        <div class="code-samples-grid">      
           <h4 class="card-title">Code samples</h4>
           <div>
             <strong><p>Here are a couple of code samples that I created for the chess application I made during bootcamp:</p></strong>
@@ -138,88 +142,95 @@
             <li>The ability to dynamically update piece locations using jQuery UI draggable and droppable and a RESTful JSON API. See <a href="https://github.com/KnightClasses/chess-game/blob/master/app/assets/javascripts/game.js" target="_blank">code sample</a> on GitHub.</li>
           </ul>
         </div>
-      </div>
-      <div class="recommendation recommendation-one">
-        <h4 class="card-title">Some kind words</h4>
-        <q>Chris and I worked together on our Agile team project with a team of 5 developers creating an interactive Rails chess application. From beginning to end, Chris was highly communicative and supportive of teammates, always ready to take on additional tasks as needed beyond each sprint. He was consistently our top contributor to the project and was the go-to on a range of important back-end features, including setting up the initial database architecture, managing the PostgreSQL records, creating methods for various chess moves, and troubleshooting and debugging. On the front-end side, Chris also implemented a redesign of the user interface on our main landing page. <br /><br />Chris was an absolute joy to collaborate with as his capabilities are vast and include both hard and soft skills. He often had helpful, friendly insight on both our shared and individual assignments. Chris would be an absolute asset to any company and I would be glad to work with him again.</q><br /><br />
-        <p>-Dian Tai, Junior Developer at University of California, Los Angeles</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container" >
-    <div class="row">
-      <div class="four columns">&nbsp</div>
-      <div class="eight columns">
-        <div class="spacecraft"><img src="img/spacecraft.png"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="section-title page-education twelve columns">
-        <h1><strong>Education</strong></h1>
-      </div>
-    </div>
-    <div class="row cards slide-box">
-      <div class="left education-p six columns">
-        <a id="education"><div class="firehose"><strong><h1 class="card-title">Firehose Project, 2017</h1></strong></div></a>
-        <hr />
-        <h6>The curriculum at Firehose covered Ruby, Ruby on Rails, JavaScript, agile team work, test-driven development, algorithms and computer science fundamentals, HTML, CSS and responsive design.</h6>
-        <p class="trim-on-small-screens">Listed to the right are some of the basic CRUD Rails apps that I created during the course, which involved mailers, validations, image uploading on AWS S3, and nested RESTful routes following standard Rails conventions.</p>
-      </div>
-      <div class="right education-p six columns">
-        <strong><p>The following are some of the Rails apps that I created during the course:</p></strong>
-        <p>A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.</p>
-        <p>A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.</p>
-        <p>An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.</p>
-        <p>A single-page to-do application features a fluid user interface that, by using JavaScript, allows users to rapidly add dynamic content.</p>
-      </div>
-
-      <div class="right education-wide six columns">
-        <div class="learned"><p>A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.</p></div>
-        <div class="learned"><p>A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.</p></div>
-        <div class="learned"><p>An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.</p></div>
-        <div class="learned"><p>A single-page to-do application with a fluid user interface that, by using JavaScript, allows users to rapidly add dynamic content.</p></div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row cards slide-box grid">
-      <div class="code-samples">      
-      </div>
-      <div class="recommendation recommendation-one">
-        <h4 class="card-title">The early days</h4>
-        <p>For more about where I've been, I recommend stopping by my LinkedIn profile (link below). The short of it is that I have an earth and environmental sciences background, and have been using different forms of technology all my life. Starting with my 7th grade science project, which involved the use of (wait, wait, don't tell me) 1) bananas and 2) a particle accelerator. (If you get in touch with me, I can tell you all about it.)</p> <p>I have a graduate degree in soil and water science (U. Florida) and an undergraduate degree in environmental biology (Columbia U.).</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container" >
-    <div class="row">
-      <div class="section-title page-contact twelve columns">
-        <a id="contact"><h1><strong>Contact</strong></h1></a>
-      </div>
-      <div class="links-container slide-box ">
-        <div class="contact-links three columns">
-          <a href="https://github.com/cduerkes" target="_blank"><i class="fa fa-github fa-2x"></i><span class="link-text">&nbspgithub</span></a>
-        </div>
-        <div class="contact-links three columns">
-          <a href="https://www.linkedin.com/in/christopherduerkes/" target="_blank"><i class="fa fa-linkedin fa-2x"></i><span class="link-text">&nbsplinkedin</span></a>
-        </div>
-        <div class="contact-links three columns">
-          <a href="resume/Christopher_Duerkes_Resume.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i><span class="link-text">&nbspcv (pdf)</span></a>
-        </div>
-        <div class="contact-links three columns">
-          <a href="mailto:christopher.duerkes@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i><span class="link-text">&nbspemail</span></a>
+        <div class="recommendation recommendation-one-grid">
+          <h4 class="card-title">Some kind words</h4>
+          <q>Chris and I worked together on our Agile team project with a team of 5 developers creating an interactive Rails chess application. From beginning to end, Chris was highly communicative and supportive of teammates, always ready to take on additional tasks as needed beyond each sprint. He was consistently our top contributor to the project and was the go-to on a range of important back-end features, including setting up the initial database architecture, managing the PostgreSQL records, creating methods for various chess moves, and troubleshooting and debugging. On the front-end side, Chris also implemented a redesign of the user interface on our main landing page. <br /><br />Chris was an absolute joy to collaborate with as his capabilities are vast and include both hard and soft skills. He often had helpful, friendly insight on both our shared and individual assignments. Chris would be an absolute asset to any company and I would be glad to work with him again.</q><br /><br />
+          <p>-Dian Tai, Junior Developer at University of California, Los Angeles</p></div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section>
+    <div class="container" >
+      <div class="row">
+        <div class="four columns">&nbsp</div>
+        <div class="eight columns">
+          <div class="spacecraft"><img src="img/spacecraft.png"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="section-title education-heading twelve columns">
+          <h1><strong>Education</strong></h1>
+        </div>
+      </div>
+      <div class="row flex slide-box">
+        <div class="left education-p white-font six columns">
+          <a id="education"><div class="white-font"><strong><h1 class="card-title">Firehose Project, 2017</h1></strong></div></a>
+          <hr />
+          <h6>The curriculum at Firehose covered Ruby, Ruby on Rails, JavaScript, agile team work, test-driven development, algorithms and computer science fundamentals, HTML, CSS and responsive design.</h6>
+          <p class="trim-on-small-screens">Listed to the right are some of the basic CRUD Rails apps that I created during the course, which involved mailers, validations, image uploading on AWS S3, and nested RESTful routes following standard Rails conventions.</p>
+        </div>
+        <div class="right education-p six columns">
+          <strong><p>The following are some of the Rails apps that I created during the course:</p></strong>
+          <p>A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.</p>
+          <p>A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.</p>
+          <p>An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.</p>
+          <p>A single-page to-do application features a fluid user interface that, by using JavaScript, allows users to rapidly add dynamic content.</p>
+        </div>
+
+        <div class="right education-wide six columns">
+          <div class="firehose-apps"><p>A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.</p></div>
+          <div class="firehose-apps"><p>A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.</p></div>
+          <div class="firehose-apps"><p>An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.</p></div>
+          <div class="firehose-apps"><p>A single-page to-do application with a fluid user interface that, by using JavaScript, allows users to rapidly add dynamic content.</p></div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row slide-box grid">
+        <div class="recommendation recommendation-one-grid">
+          <h4 class="card-title">The early days</h4>
+          <p>For more about where I've been, I recommend stopping by my LinkedIn profile (link below). The short of it is that I have an earth and environmental sciences background, and have been using different forms of technology all my life. Starting with my 7th grade science project, which involved the use of (wait, wait, don't tell me) 1) bananas and 2) a particle accelerator. (If you get in touch with me, I can tell you all about it.)</p> <p>I have a graduate degree in soil and water science (U. Florida) and an undergraduate degree in environmental biology (Columbia U.).</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" >
+      <div class="row">
+        <div class="section-title contact-heading twelve columns">
+          <a id="contact"><h1><strong>Contact</strong></h1></a>
+        </div>
+        <div class="links-container slide-box ">
+          <div class="contact-links three columns">
+            <a href="https://github.com/cduerkes" target="_blank"><i class="fa fa-github fa-2x"></i><span class="link-text">&nbspgithub</span></a>
+          </div>
+          <div class="contact-links three columns">
+            <a href="https://www.linkedin.com/in/christopherduerkes/" target="_blank"><i class="fa fa-linkedin fa-2x"></i><span class="link-text">&nbsplinkedin</span></a>
+          </div>
+          <div class="contact-links three columns">
+            <a href="resume/Christopher_Duerkes_Resume.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i><span class="link-text">&nbspcv (pdf)</span></a>
+          </div>
+          <div class="contact-links three columns">
+            <a href="mailto:christopher.duerkes@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i><span class="link-text">&nbspemail</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="https://use.fontawesome.com/70e9725fdd.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/anchor.js"></script>
+  <script type="text/javascript" src="js/collapsenav.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
