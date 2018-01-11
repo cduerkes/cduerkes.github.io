@@ -546,3 +546,8 @@ ul a {
     }
 }
 
+@media (min-width: 550px) {
+    h4.card-title {
+        font-size: 4.0rem;
+}
+
