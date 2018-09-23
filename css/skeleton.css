@@ -31,13 +31,11 @@
 .container {
   position: relative;
   max-width: 1100px;
-  margin: 0 auto;
-  box-sizing: border-box; }
+  margin: 0 auto; }
 .column,
 .columns {
   width: 100%;
-  float: left;
-  box-sizing: border-box; }
+  float: left; }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -109,22 +107,6 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
-
-
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
-html {
-  font-size: 62.5%; }
-body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "CallunaSansRegular";
-  color: black; }
-
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
