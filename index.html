@@ -50,27 +50,37 @@
 </head>
 <body>
 
-  <nav class="fixed">
-    <ul>
-      <li><a href="#home" rel="relativeanchor">Home</a></li>
-      <li><a href="#about" rel="relativeanchor">About</a></li>
-      <li><a href="#education" rel="relativeanchor">Education</a></li>
-      <li><a href="#contact" rel="relativeanchor">Contact</a></li>
-    </ul>
-  </nav>
+<!--  <nav class="fixed"> -->
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+              <li class="navigation__item"><a href="#home" class="navigation__link" rel="relativeanchor">Home</a></li>
+              <li class="navigation__item"><a href="#about" class="navigation__link" rel="relativeanchor">About</a></li>
+              <li class="navigation__item"><a href="#education" class="navigation__link" rel="relativeanchor">Education</a></li>
+              <li class="navigation__item"><a href="#contact" class="navigation__link" rel="relativeanchor">Contact</a></li>
+        </ul>
+    </nav>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <header class="header">
-        <div class="logo-box">
-            <img src="img/spacecraft.png" alt="logo" class="logo">
+        <div class="header__logo-box">
+            <img src="img/spacecraft.png" alt="logo" class="header__logo">
         </div>
-        <h1 class="heading-primary">
-            <span class="heading-primary-main">Web Developer</span>
-            <span class="heading-primary-sub"><h5>Christopher Duerkes | Warwick, NY</h5></span>
-        </h1>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Web Developer</span>
+                <span class="heading-primary--sub"><h5>Christopher Duerkes | Warwick, NY</h5></span>
+            </h1>
+        </div>
     </header>
 
+    <section class="section--1"><div class="section__card"></div></section>
+    <section class="section--2"><div class="section__card"></div></section>
+    <section class="section--3"><div class="section__card"></div></section>
+    <section class="section--4"><div class="section__card"></div></section>
+
+
+<!--
   <section>
     <div class="container">
       <div class="intro flex slide-box row">
@@ -99,7 +109,7 @@
               <div class="skill"><strong>Version Control:</strong> Git/GitHub</div>
             </li>
           </ul>
-        </div> <!--RIGHT COLUMN -->
+        </div>
 
         <div class="right skill-cards six columns">
           <div class="card card-1"></div>
@@ -111,18 +121,8 @@
           <div class="card"></div>
           <div class="card"></div>
           <div class="card"></div>
-<!--              <div class="skill"><p><strong>Ruby</strong></p></div>
-              <div class="skill"><p><strong>JavaScript</strong></p></div>
-              <div class="skill"><p><strong>HTML5</strong></p></div>
-              <div class="skill"><p><strong>CSS3</strong></p></div>
-              <div class="skill"><p><strong>Ruby on Rails</strong></p></div>
-              <div class="skill"><p><strong>jQuery</strong></p></div>
-              <div class="skill"><p><strong>RSpec</strong></p></div>
-              <div class="skill"><p><strong>Codeship</strong></p></div>
-              <div class="skill"><p><strong>Git</strong></p></div> -->
-
-        </div> <!--RIGHT COLUMN -->
-      </div> <!--LEFT/RIGHT COLUMNS ROW -->
+        </div>
+      </div>
     </div>
   </section>
 
@@ -191,12 +191,12 @@
       <div class="row slide-box grid">
         <div class="recommendation recommendation-one-grid">
           <h4 class="card-title">The early days</h4>
-          <p>For more about where I've been, I recommend stopping by my LinkedIn profile (link below). The short of it is that I have an earth and environmental sciences background, and have been using different forms of technology to do meaningful work for a long time.</p></div>
+          <p>For more about where I've been, I recommend stopping by my <a href="https://www.linkedin.com/in/christopherduerkes/" target="_blank">LinkedIn</a> profile. The short of it is that I have an earth and environmental sciences background, and have been using different forms of technology to do meaningful work for a long time.</p></div>
         </div>
       </div>
     </div>
   </section>
-
+-->
   <footer>
     <div class="container" >
       <div class="row">

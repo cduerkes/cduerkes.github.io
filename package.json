@@ -1,0 +1,22 @@
+{
+  "name": "cduerkes.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cduerkes/cduerkes.github.io.git"
+  },
+  "author": "\"Chris Duerkes\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cduerkes/cduerkes.github.io/issues"
+  },
+  "homepage": "https://github.com/cduerkes/cduerkes.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
