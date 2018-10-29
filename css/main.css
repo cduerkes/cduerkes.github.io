@@ -53,18 +53,15 @@ body {
 
 .header {
   height: 95vh; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  z-index: 1; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__text-box {
-  display: flex; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 1; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    display: flex; }
 
 .heading-primary {
   position: absolute;
@@ -75,15 +72,13 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
-
-.heading-primary--main {
-  font-size: 7rem;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.heading-primary--sub {
-  font-size: 2rem;
-  font-weight: 400; }
+  .heading-primary--main {
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .heading-primary--sub {
+    font-size: 2rem;
+    font-weight: 400; }
 
 section {
   padding: 40px 120px 40px 120px;

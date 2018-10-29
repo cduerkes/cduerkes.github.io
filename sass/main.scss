@@ -35,21 +35,24 @@ body {
 }
 
 /* Navigation Settings */
-.navigation__nav {
-    display: none;
+.navigation {
+    &__nav {
+        display: none;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 24px 0;
+        margin-right: 3rem;
+    }
+
+    &__link {
+        color: #757575;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
 }
 
-.navigation__item {
-    display: inline-block;
-    padding: 24px 0;
-    margin-right: 3rem;
-}
-
-.navigation__link {
-    color: #757575;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -64,22 +67,24 @@ body {
 
 .header {
     height: 95vh;
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        z-index: 1;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__text-box {
+        display: flex;
+    }
 }
 
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    z-index: 1;
-}
 
-.header__logo {
-    height: 3.5rem;
-}
-
-.header__text-box {
-    display: flex;
-}
 
 .heading-primary {
     position: absolute;
@@ -90,18 +95,20 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    &--main {
+        font-size: 7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &--sub {
+        font-size: 2rem;
+        font-weight: 400;
+    }
 }
 
-.heading-primary--main {
-    font-size: 7rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
-.heading-primary--sub {
-    font-size: 2rem;
-    font-weight: 400;
-}
 
 section {
     padding: 40px 120px 40px 120px;
@@ -110,24 +117,28 @@ section {
     flex-flow: row wrap;
 }
 
-.section--1 {
-    background-color: blue;
+.section {
+    &--1 {
+        background-color: blue;
+    }
+
+    &--2 {
+        background-color: grey;
+    }
+
+    &--3 {
+        background-color: pink;
+    }
+
+    &__card {
+        flex: 1;
+        background-color: $color-white;
+        padding: 4rem 8rem;
+        border-radius: .25rem;
+    }
 }
 
-.section--2 {
-    background-color: grey;
-}
 
-.section--3 {
-    background-color: pink;
-}
-
-.section__card {
-    flex: 1;
-    background-color: $color-white;
-    padding: 4rem 8rem;
-    border-radius: .25rem;
-}
 
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
