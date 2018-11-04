@@ -2,17 +2,15 @@
     padding: 4rem 12rem;
 
     &__title {
-        font-size: 5rem;
-        text-align: center;
-        text-transform: uppercase;
         margin-top: 10%;
+        text-align: center;
     }
 
     &__list {
+        font-size: 1.5rem;
         display: flex;
         justify-content: space-around;
         list-style: none;
-
     }
 
     &__link {
