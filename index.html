@@ -53,10 +53,10 @@
 <!--  <nav class="fixed"> -->
     <nav class="navigation__nav">
         <ul class="navigation__list">
-              <li class="navigation__item"><a href="#home" class="navigation__link" rel="relativeanchor">Home</a></li>
-              <li class="navigation__item"><a href="#about" class="navigation__link" rel="relativeanchor">About</a></li>
-              <li class="navigation__item"><a href="#education" class="navigation__link" rel="relativeanchor">Education</a></li>
-              <li class="navigation__item"><a href="#contact" class="navigation__link" rel="relativeanchor">Contact</a></li>
+              <li class="navigation__item"><a href="#home-anchor" class="navigation__link" rel="relativeanchor">Home</a></li>
+              <li class="navigation__item"><a href="#about-anchor" class="navigation__link" rel="relativeanchor">About</a></li>
+              <li class="navigation__item"><a href="#education-anchor" class="navigation__link" rel="relativeanchor">Education</a></li>
+              <li class="navigation__item"><a href="#contact-anchor" class="navigation__link" rel="relativeanchor">Contact</a></li>
         </ul>
     </nav>
 
@@ -74,10 +74,10 @@
         </div>
     </header>
 
-    <section class="section--1"><div class="section__card"></div></section>
-    <section class="section--2"><div class="section__card"></div></section>
-    <section class="section--3"><div class="section__card"></div></section>
-    <section class="section--4"><div class="section__card"></div></section>
+    <section class="section section--1"><div class="section__card"></div></section>
+    <section class="section section--2"><div class="section__card"></div></section>
+    <section class="section section--3"><div class="section__card"></div></section>
+    <section class="section section--4"><div class="section__card"></div></section>
 
 
 <!--
@@ -197,29 +197,17 @@
     </div>
   </section>
 -->
-  <footer>
-    <div class="container" >
-      <div class="row">
-        <div class="section-title contact-heading twelve columns">
-          <a id="contact"><h1><strong>Contact</strong></h1></a>
-        </div>
-        <div class="links-container slide-box ">
-          <div class="contact-links three columns">
-            <a href="https://github.com/cduerkes" target="_blank"><i class="fa fa-github fa-2x"></i><span class="link-text">&nbspgithub</span></a>
-          </div>
-          <div class="contact-links three columns">
-            <a href="https://www.linkedin.com/in/christopherduerkes/" target="_blank"><i class="fa fa-linkedin fa-2x"></i><span class="link-text">&nbsplinkedin</span></a>
-          </div>
-          <div class="contact-links three columns">
-            <a href="resume/Christopher_Duerkes_Resume.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i><span class="link-text">&nbspcv (pdf)</span></a>
-          </div>
-          <div class="contact-links three columns">
-            <a href="mailto:christopher.duerkes@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i><span class="link-text">&nbspemail</span></a>
-          </div>
-        </div>
-      </div>
+<footer class="contact">
+    <div class="contact__title">
+        <a id="contact-anchor"><h1><strong>Contact</strong></h1></a>
     </div>
-  </footer>
+    <ul class="contact__list">
+          <li class="contact__item"><a href="https://github.com/cduerkes" target="_blank" class="contact__link"><i class="fa fa-github fa-2x"></i><span>&nbspgithub</span></a></li>
+          <li class="contact__item"><a href="https://www.linkedin.com/in/christopherduerkes/" target="_blank" class="contact__link"><i class="fa fa-linkedin fa-2x"></i><span>&nbsplinkedin</span></a></li>
+          <li class="contact__item"><a href="resume/Christopher_Duerkes_Resume.pdf" target="_blank" class="contact__link"><i class="fa fa-file-text-o fa-2x"></i><span>&nbsplinkedin</span></a></li>
+          <li class="contact__item"><a href="mailto:christopher.duerkes@gmail.com" target="_blank" class="contact__link"><i class="fa fa-envelope-o fa-2x"></i><span>&nbsplinkedin</span></a></li>
+    </ul>
+</footer>
 
 
   <script src="https://use.fontawesome.com/70e9725fdd.js"></script>

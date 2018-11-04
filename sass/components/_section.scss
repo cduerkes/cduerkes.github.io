@@ -1,0 +1,38 @@
+.section {
+    padding: 4rem 12rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+
+    &--1 {
+        background-color: blue;
+    }
+
+    &--2 {
+        background-color: grey;
+    }
+
+    &--3 {
+        background-color: pink;
+    }
+
+    &__title {
+        font-size: 5rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 10%;
+    }
+
+    &__card {
+        flex: 1;
+        background-color: $color-white;
+        padding: 4rem 8rem;
+        border-radius: .25rem;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+    }
+
+    &__card:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+}

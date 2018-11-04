@@ -1,173 +1,18 @@
-$color-white: #fff;
-$color-black: black;
+@import "abstracts/variables";
 
-@font-face {
-    font-family: 'CallunaSansRegular';
-    src: url('../fonts/CallunaSansRegular-webfont.woff2') format('woff2'),
-         url('../fonts/CallunaSansRegular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-* {
-    box-sizing: border-box;
-}
+@import "components/card";
+@import "components/section";
 
-html {
-  font-size: 62.5%; }
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
 
-body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "CallunaSansRegular";
-  color: $color-black; 
-}
-
-/* Larger than phablet */
-@media (min-width: 550px) {
-    h1 { font-size: 3rem; }
-}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-    h1 { font-size: 5rem; }
-}
-
-/* Navigation Settings */
-.navigation {
-    &__nav {
-        display: none;
-    }
-
-    &__item {
-        display: inline-block;
-        padding: 24px 0;
-        margin-right: 3rem;
-    }
-
-    &__link {
-        color: #757575;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-}
-
-
-/* Larger than phablet */
-@media (min-width: 550px) {
-    nav {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 7rem;
-        background: $color-white;
-    }
-}
-
-.header {
-    height: 95vh;
-
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-        z-index: 1;
-    }
-
-    &__logo {
-        height: 3.5rem;
-    }
-
-    &__text-box {
-        display: flex;
-    }
-}
-
-
-
-.heading-primary {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: red;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-
-    &--main {
-        font-size: 7rem;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    &--sub {
-        font-size: 2rem;
-        font-weight: 400;
-    }
-}
-
-
-
-section {
-    padding: 40px 120px 40px 120px;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.section {
-    &--1 {
-        background-color: blue;
-    }
-
-    &--2 {
-        background-color: grey;
-    }
-
-    &--3 {
-        background-color: pink;
-    }
-
-    &__card {
-        flex: 1;
-        background-color: $color-white;
-        padding: 4rem 8rem;
-        border-radius: .25rem;
-    }
-}
-
-
-
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.section-title {
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 10%;
-}
-
-.section-title h1 {
-    font-size: 5rem;
-    margin-top: 10%;
-    margin-bottom: 0%;
-}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-    .section-title h1 { font-size: 7rem; }
-}
-
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-
-    .links-container { padding-left:10rem; }
-    .contact-links { text-align: center; }
-}
+@import "pages/home";
 
 .come-in {
   transform: translateY(150px);
