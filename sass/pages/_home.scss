@@ -1,16 +1,22 @@
 .contact {
     padding: 4rem 12rem;
+    background-color: white;
 
     &__title {
         margin-top: 10%;
-        text-align: center;
     }
 
     &__list {
         font-size: 1.5rem;
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    &__item {
+        padding: 6rem;
+        display: inline-block;
     }
 
     &__link {

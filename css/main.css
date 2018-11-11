@@ -23,20 +23,25 @@ body {
   font-family: "CallunaSansRegular";
   color: black; }
 
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .section {
-  padding: 4rem 12rem;
+  padding: 4rem 12rem 6rem 12rem;
   min-height: 100vh;
   display: flex;
   flex-flow: row wrap; }
   .section--1 {
-    background-color: blue; }
+    background-color: #67BACA; }
   .section--2 {
-    background-color: grey; }
+    background-color: #67BACA; }
   .section--3 {
-    background-color: pink; }
+    background-color: white; }
   .section__title {
     font-size: 5rem;
-    text-align: center;
     text-transform: uppercase;
     margin-top: 10%; }
   .section__card {
@@ -45,9 +50,18 @@ body {
     padding: 4rem 8rem;
     border-radius: .25rem;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.12), 1px 0 2px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24); }
-  .section__card:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .section__card:hover {
+    box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.12), 1px 0 2px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24); }
+  .section__hr {
+    max-width: 12rem;
+    border: 2px solid #eba722;
+    margin-bottom: 1.25rem;
+    position: relative;
+    top: -.25rem; }
+  .section__description {
+    font-size: 2rem;
+    max-width: 50rem; }
 
 .header {
   height: 95vh; }
@@ -58,18 +72,12 @@ body {
     z-index: 1; }
   .header__logo {
     height: 3.5rem; }
-  .header__text-box {
-    display: flex; }
 
 .heading-primary {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: red;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
+  transform: translate(-50%, -50%); }
   .heading-primary--main {
     font-size: 7rem;
     font-weight: bold;
@@ -77,6 +85,18 @@ body {
   .heading-primary--sub {
     font-size: 2rem;
     font-weight: 400; }
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 6rem; }
+  .heading-secondary--main {
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .heading-secondary--sub {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem; }
 
 .navigation__nav {
   display: flex;
@@ -97,15 +117,18 @@ body {
   font-size: 1.5rem; }
 
 .contact {
-  padding: 4rem 12rem; }
+  padding: 4rem 12rem;
+  background-color: white; }
   .contact__title {
-    margin-top: 10%;
-    text-align: center; }
+    margin-top: 10%; }
   .contact__list {
     font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    list-style: none; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .contact__item {
+    padding: 6rem;
+    display: inline-block; }
   .contact__link {
     margin: 2rem auto;
     text-decoration: none; }
