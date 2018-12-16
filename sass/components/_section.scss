@@ -1,15 +1,19 @@
 .section {
     padding: 4rem 12rem 6rem 12rem;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: row wrap;
+    min-height: 80vh;
 
     &--1 {
-        background-color: #67BACA; 
+        background-image: url('../img/jwebb.jpg'); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &--2 {
-        background-color: #67BACA; 
+        display: flex;
+        flex-flow: column wrap;
+        background-color: #FFF; 
+        width: 65%;
     }
 
     &--3 {
@@ -23,29 +27,34 @@
     }
 
     &__card {
+        position: relative;
         flex: 1;
-        background-color: $color-white;
-        padding: 4rem 8rem;
+        flex-flow: row wrap;
+        background-color: #fff;
+        opacity: .85;
+        padding: 5rem;
         border-radius: .25rem;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        margin-bottom: 2rem;
+
+        &--1 {
+            top: -10rem;
+        }
+
+        &--2 {
+//            background-image: url(../img/spacecraft.png);
+            position: relative;
+            top: 0rem;
+        }
     }
 
     &__card:hover {
         box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
             }
 
-    &__hr {
-        max-width: 12rem;
-        border: 2px solid #eba722;
-        margin-bottom: 1.25rem;
-        position: relative;
-        top: -.25rem;
-    }
-
     &__description {
         font-size: 2rem;
-        max-width: 50rem;
     }
 
 }

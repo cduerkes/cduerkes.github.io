@@ -1,21 +1,4 @@
 $(document).ready(function() {
-  
-    // This is a shortcut to bind both mouseOver and mouseOut
-    $('div.slideOutTab').hover(function() {
-        // Animate out when hovered, stopping all previous animations
-        $(this)
-            .stop(true, false)
-            .animate({
-                left: 0
-            }, 300);
-    }, function() {
-        // Animate back in when not hovered, stopping all previous animations
-        $(this)
-            .stop(true, false)
-            .animate({
-                left: -107
-            }, 300);
-    });
   (function($) {
 
       /**
@@ -67,6 +50,4 @@ $(document).ready(function() {
       });
 
   });
-
-
 });
