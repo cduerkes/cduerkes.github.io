@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-  $('.spacecraft').hover(function() { //mouse in
-    $('.spacecraft').animate({ left: '10px', top: '20px' }, 400);
-  }, function() { //mouse out
-    $('.spacecraft').animate({ left: 0, top: 0 }, 400);
-  });
-
-
   $('a[rel="relativeanchor"]').click(function(){
       $('html, body').animate({
           scrollTop: $( $.attr(this, 'href') ).offset().top - 150
@@ -15,5 +8,20 @@ $(document).ready(function() {
       $('.navigation__button').click();
       return false;
   }); 
+
+  var controller = new ScrollMagic.Controller();
+
+  var skillTween = new TweenMax.to('.section__skill--HTML5', 1, {
+      color: 'red',
+      scale: 1.1
+  });
+
+  var scene = new ScrollMagic.Scene({
+  triggerElement: '.section__skill' // point of execution
+})
+  .triggerHook(".5")
+  .setTween(skillTween)
+  .addIndicators()
+  .addTo(controller);
 
 });
