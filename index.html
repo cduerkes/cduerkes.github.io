@@ -33,7 +33,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -48,48 +48,54 @@
 </head>
 <body>
 
-<!--  <nav class="fixed"> -->
-<!--
-    <nav class="navigation__nav">
-        <ul class="navigation__list">
-              <li class="navigation__item"><a href="#home-anchor" class="navigation__link" rel="relativeanchor">Home</a></li>
-              <li class="navigation__item"><a href="#about-anchor" class="navigation__link" rel="relativeanchor">About</a></li>
-              <li class="navigation__item"><a href="#education-anchor" class="navigation__link" rel="relativeanchor">Education</a></li>
-              <li class="navigation__item"><a href="#contact-anchor" class="navigation__link" rel="relativeanchor">Contact</a></li>
-        </ul>
-    </nav>
--->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                  <li class="navigation__item"><a href="#home-anchor" class="navigation__link" rel="relativeanchor"><span>01</span>Home</a></li>
+                  <li class="navigation__item"><a href="#about-anchor" class="navigation__link" rel="relativeanchor"><span>02</span>About</a></li>
+                  <li class="navigation__item"><a href="#education-anchor" class="navigation__link" rel="relativeanchor"><span>03</span>Education</a></li>
+                  <li class="navigation__item"><a href="#contact-anchor" class="navigation__link" rel="relativeanchor"><span>04</span>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!--    <header class="header">
+    <header class="header">
         <div class="header__logo-box">
-            <img src="img/e1.jpg" alt="logo" class="header__logo">
+        <!---    <img src="img/e1.jpg" alt="logo" class="header__logo"> --->
         </div>
         <div class="header__text-box">
             <h1 class="heading-primary u-center-text">
-                <span class="heading-primary--main">Web Developer</span>
+                <a id="home-anchor"><span class="heading-primary--main">Web Developer</span></a>
                 <span class="heading-primary--sub"><h5>Christopher Duerkes | Warwick, NY</h5></span>
             </h1>
         </div>
     </header>
--->
 
-    <div class="header__logo-box">
+<!--    <div class="header__logo-box">
         <img src="" alt="logo" class="header__logo">
-    </div>
+    </div>-->
 
     <main>
         <section class="section section--1">
         </section>
         <section class="section section--2">
             <div class="section__card section__card--1 slide-box">
-                <h2 class="heading-secondary--main">About</h2>
+                <h2 class="heading-secondary--main"><a id="about-anchor"><span>About</span></a></h2>
                 <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend.</p>
                 <p><a href="">Something else</a></p>
             </div>
             <div class="section__card section__card--2 slide-box">
-                <h2 class="heading-secondary--main">Education</h2>
+                <h2 class="heading-secondary--main"><a id="education-anchor"><span>Education</span></a></h2>
                 <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend.</p>
                 <p><a href="">Something else</a></p>
             </div>

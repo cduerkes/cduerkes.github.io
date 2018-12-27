@@ -32,10 +32,11 @@
         flex-flow: row wrap;
         background-color: #fff;
         opacity: .85;
-        padding: 5rem;
+        padding: 2rem 4rem;
         border-radius: .25rem;
+        border: 1rem solid #fff;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15), 0 7px 10px rgba(0, 0, 0, 0.22);
         margin-bottom: 2rem;
 
         &--1 {
@@ -54,7 +55,7 @@
             }
 
     &__description {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
 }
