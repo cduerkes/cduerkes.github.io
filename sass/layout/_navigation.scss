@@ -5,10 +5,10 @@
         left: 0;
         height: 100vh;
         z-index: 1500;
-
         opacity: 0;
         width: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        background-color: white;
     }
 
     &__item {
@@ -59,11 +59,11 @@
 
     &__button {
         background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
-        position: absolute;
-        top: 6rem;
-        right: 6rem;
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        top: 5rem;
+        right: 5rem;
         border-radius: 50%;
         z-index: 2000;
 //        box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -94,7 +94,7 @@
     //ICON
     &__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 3rem;
 
         &, 
         &::before,

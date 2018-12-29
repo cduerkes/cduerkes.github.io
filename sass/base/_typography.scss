@@ -30,13 +30,14 @@ body {
     text-transform: uppercase;
 
     &--main {
-        font-size: 2rem;
+        font-size: 7rem;
         font-weight: bold;
         text-transform: uppercase;
     }
 
     &--sub {
-        font-size: 2rem;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 4rem;
         font-weight: 400;
         margin-bottom: 1rem;
     }
