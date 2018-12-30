@@ -6,6 +6,19 @@
   color: $color-red;
 }
 
+.u-underline-text {
+  text-decoration: underline;
+}
+
+.u-navajo-text {
+  color: #ffdead;
+}
+
+.u-antiquewhite-text {
+  color: antiquewhite;
+  opacity: .8;
+}
+
 // use utility classes to allow components to have better reusability
 
 .u-margin-bottom-small {

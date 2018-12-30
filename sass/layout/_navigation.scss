@@ -58,11 +58,11 @@
     }
 
     &__button {
-        background-color: $color-white;
+        background-color: mediumaquamarine;
         height: 6rem;
         width: 6rem;
         position: fixed;
-        top: 5rem;
+        top: 4rem;
         right: 5rem;
         border-radius: 50%;
         z-index: 2000;
@@ -75,9 +75,9 @@
         height: 6rem;
         width: 6rem;
         border-radius: 50%;
-        position: absolute;
-        top: 6.5rem;
-        right: 6.5rem;
+        position: fixed;
+        top: 4rem;
+        right: 5rem;
         background-image: radial-gradient($color-white, $color-white);
         z-index: 1000;
 
@@ -101,7 +101,7 @@
         &::after {
             width: 3rem;
             height: 2px;
-            background-color: $color-red;
+            background-color: $color-white;
             display: inline-block;
         }
 
