@@ -2,15 +2,7 @@
     height: 55vh;
 
     &__logo-box {
-        color: #b31217;
-        position: fixed;
-        top: 4rem;
-        left: 4rem;
-        z-index: 1;
-        font-size: 2rem;
-        font-family: arial;
-        text-transform: uppercase;
-        letter-spacing: 3px;
+
     }
 
     &__logo {
@@ -18,10 +10,14 @@
     }
 
     &__text-box {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        color: #b31217;
+        position: fixed;
+        top: 4rem;
+        left: 4rem;
+        z-index: 1;
+        font-size: 2rem;
+        font-family: arial;
+        letter-spacing: 3px;
     }
 }
 

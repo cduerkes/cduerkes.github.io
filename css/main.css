@@ -89,6 +89,9 @@ body {
 .u-underline-text {
   text-decoration: underline; }
 
+.u-uppercase-text {
+  text-transform: uppercase; }
+
 .u-navajo-text {
   color: #ffdead; }
 
@@ -161,12 +164,14 @@ body {
     font-weight: 400; }
   .section__paragraph {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400; }
 
 .header {
   height: 55vh; }
-  .header__logo-box {
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
     color: #b31217;
     position: fixed;
     top: 4rem;
@@ -174,15 +179,7 @@ body {
     z-index: 1;
     font-size: 2rem;
     font-family: arial;
-    text-transform: uppercase;
     letter-spacing: 3px; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
 
 .navigation__nav {
   position: fixed;
