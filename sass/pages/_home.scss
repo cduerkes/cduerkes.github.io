@@ -1,0 +1,43 @@
+.contact {
+    padding: 4rem 12rem 18rem;
+    background-color: white;
+
+    &__title {
+        margin-top: 10%;
+    }
+
+    &__list {
+        font-size: 1.5rem;
+        list-style-type: none;
+        margin: 2rem;
+        padding: 0;
+    }
+
+    &__item {
+        padding: 0 6rem;
+        padding-bottom: 6rem;
+        display: inline-block;
+
+        &:hover {
+            -webkit-animation: bounce 400ms ease-in-out forwards;
+            animation: bounce 500ms ease-in-out forwards;
+        }
+    }
+
+    &__link {
+        color: black;
+        opacity: .9;
+        margin: 2rem auto;
+        text-decoration: none;
+
+        &:link, 
+        &:visited {
+
+        }
+
+        &:hover, 
+        &:active {
+
+        }
+    }
+}

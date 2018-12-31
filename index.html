@@ -16,10 +16,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Christopher Duerkes - Web Developer</title>
-  <meta name="description" content="Located in Warwick, NY, Christopher Duerkes is a full-stack web developer with experience using Ruby, Rails, jQuery, JavaScript, HTML and CSS.">
+  <meta name="description" content="Located in Warwick, NY, Christopher Duerkes is a full-stack web developer with experience using JavaScript, jQuery, HTML and CSS.">
   <meta name="author" content="Christopher Duerkes">
 
-  <meta property="og:description" content="I'm a recent coding bootcamp grad and web developer with experience using Ruby, Rails, jQuery, JavaScript, HTML and CSS. Learn more about what I can do for you and for links to my GitHub repositories, a downloadable resume, and a way to get in touch." />
+  <meta property="og:description" content="I'm a web developer with experience using JavaScript, jQuery, HTML and CSS. Learn more about what I can do for you and for links to my GitHub repositories, a downloadable resume, and a way to get in touch." />
   <meta property="og:title" content="Christopher Duerkes - Web Software Developer" />
   <meta property="og:url" content="http://www.christopherduerkes.com/" />
   <meta property="og:site_url" content="http://www.christopherduerkes.com/" />
@@ -31,16 +31,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" integrity="sha384-W6YFWjtTKhOxZ5VrWHSjsbcnjrh3CyPajgFqQ5dSQUI1op/LE8FYlymWoKPVgbxu" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Favicon
@@ -49,85 +43,64 @@
 
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-  <nav class="fixed">
-    <ul>
-      <li><a href="#home" rel="relativeanchor">Home</a></li>
-      <li><a href="#about" rel="relativeanchor">About</a></li>
-      <li><a href="#education" rel="relativeanchor">Education</a></li>
-      <li><a href="#contact" rel="relativeanchor">Contact</a></li>
-    </ul>
-  </nav>
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="intro-name twelve columns">
-          <h6><a id="home"><strong>CHRISTOPHER DUERKES</strong></a></h6>
-        </div>
-      </div>
-      <div class="row">
-        <div class="intro-title twelve columns">
-          <h1><strong>Web Developer</strong></h1>
-        </div>
-      </div>
+        <div class="navigation__background">&nbsp;</div> 
 
-      <div class="row">
-        <div class="intro-subheading twelve columns">
-          <h5>Christopher Duerkes | Warwick, NY</h5>
-        </div>
-      </div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                  <li class="navigation__item"><a href="#home-anchor" class="navigation__link" rel="relativeanchor"><span>01</span>Home</a></li>
+                  <li class="navigation__item"><a href="#about-anchor" class="navigation__link" rel="relativeanchor"><span>02</span>About</a></li>
+                  <li class="navigation__item"><a href="#experience-anchor" class="navigation__link" rel="relativeanchor"><span>03</span>Experience</a></li>
+                  <li class="navigation__item"><a href="#contact-anchor" class="navigation__link" rel="relativeanchor"><span>04</span>Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
 
-  <section>
-    <div class="container">
-      <div class="intro slide-box flex row">
-        <div class="left intro-p six columns">
-          <a id="about"><strong><h1 class="card-title">About</h1></strong></a>
-          <hr />
-          <p>I am a front-end leaning, full-stack web developer with experience using Ruby, Rails, JavaScript and jQuery. I strive to create simple, beautiful and engaging experiences and services with maintainable and reusable code.</p>
-        </div>
-
-        <div class="right skills six columns">
-          <div class=skills-label>
-            <strong><h1 class="card-title">Skills</h1></strong>
-            <hr />
-          </div>
-          <ul>
-            <li>
-              <div class="skill"><strong>Languages:</strong> Ruby, JavaScript, HTML, CSS</div>
-            </li>
-            <li>
-              <div class="skill"><strong>Libraries/Frameworks:</strong> Ruby on Rails, jQuery, Bootstrap</div>
-            </li>
-            <li>
-              <div class="skill"><strong>Testing:</strong> RSpec (Unit Testing), Codeship (Continuous Integration and Deployment)</div>
-            </li>
-            <li>
-              <div class="skill"><strong>Version Control:</strong> Git/GitHub</div>
-            </li>
-          </ul>
-        </div> <!--RIGHT COLUMN -->
-
-        <div class="right skills-wide six columns">
-              <div class="skill"><p><strong>Ruby</strong></p></div>
-              <div class="skill"><p><strong>JavaScript</strong></p></div>
-              <div class="skill"><p><strong>HTML5</strong></p></div>
-              <div class="skill"><p><strong>CSS3</strong></p></div>
-              <div class="skill"><p><strong>Ruby on Rails</strong></p></div>
-              <div class="skill"><p><strong>jQuery</strong></p></div>
-              <div class="skill"><p><strong>RSpec</strong></p></div>
-              <div class="skill"><p><strong>Codeship</strong></p></div>
-              <div class="skill"><p><strong>Git</strong></p></div>
-
-        </div> <!--RIGHT COLUMN -->
-      </div> <!--LEFT/RIGHT COLUMNS ROW -->
+<header>
+    <div class="header__logo-box"></div>
+    <div class="header__text-box">
+        <div class="u-uppercase-text">Christopher Duerkes</div>
+<!--        <div>i build websites</div> -->
     </div>
-  </section>
+</header>
 
+    <main>
+        <section class="section section--1"></section>
+        <section class="section section--2">
+            <div class="section__skills">
+                <span class="section__skill section__skill--HTML5 pin-1">HTML5</span>
+                <span class="section__skill section__skill--CSS3 pin-2">CSS3</span>
+                <span class="section__skill section__skill--JavaScript pin-3">JavaScript</span>
+                <span class="section__skill section__skill--jQuery pin-4">jQuery</span>
+                <span class="section__skill section__skill--Git pin-5">Git</span>
+            </div>
+        </section>
+        <section class="section section--3">
+            <div class="section__text section__text--1">
+                <h2 class="heading-secondary--main"><a id="about-anchor"><span>About</span></a></h2>
+                <hr class="section__hr"/>
+                <p class="section__paragraph u-margin-bottom-small u-white-text">Front-end leaning, full-stack web developer in search of a better web. Experienced with HTML, CSS, JavaScript and jQuery, Ruby, Ruby on Rails, and ColdFusion.</p>
+            </div>
+        </section>
+        <section class="section section--4">
+            <div class="section__text section__text--2">
+                <h2 class="heading-secondary--main"><a id="experience-anchor"><span>Experience</span></a></h2>
+                <hr class="section__hr"/>
+                <p class="section__paragraph u-margin-bottom-small">Currently developing and maintaining the e-commerce website for Thorlabs, a photonics and life sciences equipment manufacturer.</p>
+                <p class="section__paragraph u-margin-bottom-small">Graduate of the Firehose Project full-stack web development bootcamp.</p>
+            </div>
+        </section>
+    </main>
+
+
+
+<!--
   <section>
     <div class="container">
       <div class="row slide-box grid">
@@ -153,12 +126,6 @@
   <section>
     <div class="container" >
       <div class="row">
-        <div class="four columns">&nbsp</div>
-        <div class="eight columns">
-          <div class="spacecraft"><img src="img/spacecraft.png"></div>
-        </div>
-      </div>
-      <div class="row">
         <div class="section-title education-heading twelve columns">
           <h1><strong>Education</strong></h1>
         </div>
@@ -177,59 +144,31 @@
           <p>An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.</p>
           <p>A single-page to-do application features a fluid user interface that, by using JavaScript, allows users to rapidly add dynamic content.</p>
         </div>
-
-        <div class="right education-wide six columns">
-          <div class="firehose-apps"><p>A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.</p></div>
-          <div class="firehose-apps"><p>A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.</p></div>
-          <div class="firehose-apps"><p>An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.</p></div>
-          <div class="firehose-apps"><p>A single-page to-do application with a fluid user interface that, by using JavaScript, allows users to rapidly add dynamic content.</p></div>
-        </div> 
       </div>
     </div>
   </section>
+-->
+    <footer class="contact">
+        <h1 class="heading-secondary u-center-text">
+            <a id="contact-anchor"><span class="heading-secondary--main">Contact</span></a>
+        </h1>
+        <ul class="contact__list u-center-text">
+              <li class="contact__item"><a href="https://github.com/cduerkes" target="_blank" class="contact__link"><i class="fa fa-github fa-2x"></i><span>&nbspgithub</span></a></li>
+              <li class="contact__item"><a href="https://www.linkedin.com/in/christopherduerkes/" target="_blank" class="contact__link"><i class="fa fa-linkedin fa-2x"></i><span>&nbsplinkedin</span></a></li>
+              <li class="contact__item"><a href="resume/Christopher_Duerkes_Resume.pdf" target="_blank" class="contact__link"><i class="fa fa-file-text-o fa-2x"></i><span>&nbspcv (pdf)</span></a></li>
+              <li class="contact__item"><a href="mailto:christopher.duerkes@gmail.com" target="_blank" class="contact__link"><i class="fa fa-envelope-o fa-2x"></i><span>&nbspemail</span></a></li>
+        </ul>
+    </footer>
 
-  <section>
-    <div class="container">
-      <div class="row slide-box grid">
-        <div class="recommendation recommendation-one-grid">
-          <h4 class="card-title">The early days</h4>
-          <p>For more about me, I recommend stopping by my LinkedIn profile (link below). The short of it is that I have an earth and environmental sciences background, and have been using different forms of technology all my life.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container" >
-      <div class="row">
-        <div class="section-title contact-heading twelve columns">
-          <a id="contact"><h1><strong>Contact</strong></h1></a>
-        </div>
-        <div class="links-container slide-box ">
-          <div class="contact-links three columns">
-            <a href="https://github.com/cduerkes" target="_blank"><i class="fa fa-github fa-2x"></i><span class="link-text">&nbspgithub</span></a>
-          </div>
-          <div class="contact-links three columns">
-            <a href="https://www.linkedin.com/in/christopherduerkes/" target="_blank"><i class="fa fa-linkedin fa-2x"></i><span class="link-text">&nbsplinkedin</span></a>
-          </div>
-          <div class="contact-links three columns">
-            <a href="resume/Christopher_Duerkes_Resume.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i><span class="link-text">&nbspcv (pdf)</span></a>
-          </div>
-          <div class="contact-links three columns">
-            <a href="mailto:christopher.duerkes@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i><span class="link-text">&nbspemail</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <script src="https://use.fontawesome.com/70e9725fdd.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/anchor.js"></script>
-  <script type="text/javascript" src="js/collapsenav.js"></script>
-  <script type="text/javascript" src="js/slide.js"></script>
+    <script src="https://use.fontawesome.com/70e9725fdd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/anchor.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
