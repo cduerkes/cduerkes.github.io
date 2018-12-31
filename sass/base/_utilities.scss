@@ -14,21 +14,20 @@
   color: #ffdead;
 }
 
-.u-antiquewhite-text {
-  color: antiquewhite;
-  opacity: .8;
+.u-white-text {
+  color: $color-white;
 }
 
 // use utility classes to allow components to have better reusability
 
 .u-margin-bottom-small {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .u-margin-bottom-medium {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 .u-margin-bottom-large {
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
 }

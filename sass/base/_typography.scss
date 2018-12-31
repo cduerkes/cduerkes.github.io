@@ -18,7 +18,7 @@ body {
         font-size: 7rem;
         font-weight: bold;
         text-transform: uppercase;
-        color: antiquewhite;
+        opacity: .8;
     }
 
     &--sub {
@@ -28,14 +28,12 @@ body {
 }
 
 .heading-secondary {
-    text-transform: uppercase;
-
     &--main {
-        color: rebeccapurple;
+        color: black;
         font-size: 7rem;
         font-weight: bold;
         text-transform: uppercase;
-        opacity: .8;
+        opacity: 1;
     }
 
     &--sub {

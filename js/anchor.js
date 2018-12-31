@@ -6,8 +6,10 @@ $(document).ready(function() {
 
       if (anchor === '#home-anchor') {
         scrollTo = 0;
+      } else if (anchor === '#experience-anchor') {
+        scrollTo = $( $.attr(this, 'href') ).offset().top - 150;
       } else {
-        scrollTo = $( $.attr(this, 'href') ).offset().top - 75;
+        scrollTo = $( $.attr(this, 'href') ).offset().top - 185;
       }
 
       $('html, body').animate({

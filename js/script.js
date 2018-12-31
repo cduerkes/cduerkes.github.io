@@ -3,13 +3,13 @@ $(document).ready(function() {
   var controller = new ScrollMagic.Controller();
 
   $(".section__skill").each(function(i, val) {
-    var skillTween2 = new TweenMax.to(this, 8, {
-        opacity: .5,
+    var skillTween1 = new TweenMax.to(this, 8, {
+        opacity: 1, //.7
         scale: .90,
         ease: Cubic.easeOut
     });
 
-    var skillTween1 = new TweenMax.to(this, .5, {
+    var skillTween2 = new TweenMax.to(this, .5, {
         opacity: 1,
         scale: 1.1,
         ease: Cubic.easeOut
@@ -17,36 +17,48 @@ $(document).ready(function() {
 
     var scene1 = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 'onEnter',
-      offset: 300,
       duration: 300
     })
+    .triggerHook(".2")
     .setTween(skillTween1)
 //    .addIndicators()
     .addTo(controller);
 
     var scene2 = new ScrollMagic.Scene({
       triggerElement: this,
+      triggerHook: 'onEnter',
+      offset: 300,
       duration: 300
     })
-    .triggerHook(".2")
     .setTween(skillTween2)
 //    .addIndicators()
     .addTo(controller);
   });
 
+  var bg_tween0 = TweenMax.to('.section, footer', 1, {
+    backgroundColor: 'rgb(0, 3, 111)', //about
+    ease: Linear.easeNone
+  });
+
   var bg_tween1 = TweenMax.to('.section, footer', 1, {
-    backgroundColor: '#ADD8E6',  //#57599f (purple-blue) #ff6347(tomato)
+    backgroundColor: 'rgb(253, 200, 8)', //experience
     ease: Linear.easeNone
   });
 
   var bg_tween2 = TweenMax.to('.section, footer', 1, {
-    backgroundColor: '#ff6347',  //#57599f (purple-blue) #ff6347(tomato) #ff6347
+    backgroundColor: 'rgb(132, 151, 26)', //contact
     ease: Linear.easeNone
   });
 
+  var bg_scene0 = new ScrollMagic.Scene({
+    triggerElement: '.section--3', //about
+    triggerHook: 'onEnter',
+    duration: 300
+  })
+  .setTween(bg_tween0);
+
   var bg_scene1 = new ScrollMagic.Scene({
-    triggerElement: '.section--4',
+    triggerElement: '.section--4', //experience
     duration: 300
   })
   .triggerHook("1")
@@ -60,6 +72,7 @@ $(document).ready(function() {
   .setTween(bg_tween2);
 
   controller.addScene([
+    bg_scene0,
     bg_scene1,
     bg_scene2
   ]);
