@@ -2,6 +2,10 @@
     padding: 10rem 12rem;
     min-height: 100vh;
 
+    @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
+        padding: 1rem 2rem;
+    }
+
     &--1 {
         background-position: center;
         background-repeat: repeat;
@@ -75,6 +79,10 @@
 //        -webkit-background-clip: text;
 //        background-clip: text;
 
+        @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
+            font-size: 21rem;
+        }
+
         &--HTML5 {
 
         }
@@ -98,5 +106,9 @@
         font-family: 'Cormorant Garamond', serif;
         font-size: 2.5rem;
         font-weight: 400;
+
+        @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
+            font-size: 5rem;
+        }
     }
 }

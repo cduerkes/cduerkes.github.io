@@ -22,6 +22,12 @@
             -webkit-animation: bounce 400ms ease-in-out forwards;
             animation: bounce 500ms ease-in-out forwards;
         }
+
+        @media only screen and (max-height: 599px) and (orientation: landscape), (max-width: 599px) and (orientation: portrait) {
+            span {
+                font-size: 2em;
+            }
+        }
     }
 
     &__link {
@@ -29,15 +35,11 @@
         opacity: .9;
         margin: 2rem auto;
         text-decoration: none;
+    }
 
-        &:link, 
-        &:visited {
-
-        }
-
-        &:hover, 
-        &:active {
-
+    @media only screen and (max-height: 599px) and (orientation: landscape), (max-width: 599px) and (orientation: portrait) {
+        .fa-2x { 
+            font-size: 6em; 
         }
     }
 }
