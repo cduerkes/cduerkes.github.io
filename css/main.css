@@ -166,7 +166,8 @@ body {
     color: black; }
     @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
       .section__skill {
-        font-size: 21rem; } }
+        font-size: 19rem;
+        padding-right: 1rem; } }
   .section__description {
     font-family: 'Cormorant Garamond', serif;
     font-size: 3rem;
@@ -338,16 +339,20 @@ body {
       -webkit-animation: bounce 400ms ease-in-out forwards;
       animation: bounce 500ms ease-in-out forwards; }
     @media only screen and (max-height: 599px) and (orientation: landscape), (max-width: 599px) and (orientation: portrait) {
-      .contact__item span {
-        font-size: 2em; } }
+      .contact__item {
+        padding: 0 4rem; }
+        .contact__item span {
+          font-size: 2em; } }
   .contact__link {
     color: black;
     opacity: .9;
     margin: 2rem auto;
     text-decoration: none; }
   @media only screen and (max-height: 599px) and (orientation: landscape), (max-width: 599px) and (orientation: portrait) {
-    .contact .fa-2x {
-      font-size: 6em; } }
+    .contact {
+      padding: 4rem 4rem 18rem; }
+      .contact .fa-2x {
+        font-size: 4em; } }
 
 .come-in {
   transform: translateY(150px);
