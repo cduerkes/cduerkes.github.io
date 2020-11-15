@@ -79,6 +79,14 @@
 //        -webkit-background-clip: text;
 //        background-clip: text;
 
+        @media only screen and (min-width: 1025px) and (max-width: 1366px) {
+            font-size: 16rem;
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 1024px) {
+            font-size: 12rem;
+        }
+
         @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
             font-size: 19rem;
             padding-right: 1rem;

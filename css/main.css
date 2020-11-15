@@ -164,6 +164,12 @@ body {
     letter-spacing: -.04em;
     opacity: .9;
     color: black; }
+    @media only screen and (min-width: 1025px) and (max-width: 1366px) {
+      .section__skill {
+        font-size: 16rem; } }
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+      .section__skill {
+        font-size: 12rem; } }
     @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
       .section__skill {
         font-size: 19rem;
