@@ -347,6 +347,9 @@ body {
     .contact__item:hover {
       -webkit-animation: bounce 400ms ease-in-out forwards;
       animation: bounce 500ms ease-in-out forwards; }
+    @media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+      .contact__item {
+        padding: 0 4rem; } }
     @media only screen and (max-height: 599px) and (orientation: landscape), (max-width: 599px) and (orientation: portrait) {
       .contact__item {
         padding: 0 4rem; }
