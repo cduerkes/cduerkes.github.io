@@ -24,6 +24,7 @@
         }
 
         @media only screen and (max-height: 599px) and (orientation: landscape), (max-width: 599px) and (orientation: portrait) {
+            padding: 0 4rem;
             span {
                 font-size: 2em;
             }
@@ -38,8 +39,9 @@
     }
 
     @media only screen and (max-height: 599px) and (orientation: landscape), (max-width: 599px) and (orientation: portrait) {
+        padding: 4rem 4rem 18rem;
         .fa-2x { 
-            font-size: 6em; 
+            font-size: 4em; 
         }
     }
 }

@@ -80,7 +80,8 @@
 //        background-clip: text;
 
         @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
-            font-size: 21rem;
+            font-size: 19rem;
+            padding-right: 1rem;
         }
 
         &--HTML5 {
