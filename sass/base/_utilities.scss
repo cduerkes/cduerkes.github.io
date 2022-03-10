@@ -1,0 +1,37 @@
+.u-center-text {
+    text-align: center;
+}
+
+.u-red-text {
+  color: $color-red;
+}
+
+.u-underline-text {
+  text-decoration: underline;
+}
+
+.u-uppercase-text {
+  text-transform: uppercase;
+}
+
+.u-navajo-text {
+  color: #ffdead;
+}
+
+.u-white-text {
+  color: $color-white;
+}
+
+// use utility classes to allow components to have better reusability
+
+.u-margin-bottom-small {
+    margin-bottom: 3rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 6rem;
+}
+
+.u-margin-bottom-large {
+    margin-bottom: 12rem;
+}

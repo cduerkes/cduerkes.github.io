@@ -1,0 +1,44 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        -webkit-transform: translate(0px, -12px);
+        transform: translate(0px, -12px);
+    }
+
+    80% {
+        -webkit-transform: translate(0px, 2px);
+        transform: translate(0px, 2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        -webkit-transform: translate(0px, -12px);
+        transform: translate(0px, -12px);
+    }
+
+    80% {
+        -webkit-transform: translate(0px, 2px);
+        transform: translate(0px, 2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
