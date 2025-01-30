@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 @font-face {
     font-family: 'CallunaSansRegular';
     src: url('../fonts/CallunaSansRegular-webfont.woff2') format('woff2'),
@@ -10,7 +12,7 @@ body {
     line-height: 1.6;
     font-weight: 400;
     font-family: 'CallunaSansRegular', sans-serif;
-    color: $color-black; 
+    color: variables.$color-black; 
   }
 
 .heading-primary {

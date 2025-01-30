@@ -3,7 +3,11 @@
     min-height: 100vh;
 
     @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
-        padding: 1rem 2rem;
+        padding: 1rem 15rem;
+    }
+
+    @media only screen and (max-width: 475px) and (orientation: portrait), (max-height: 475px) and (orientation: landscape) {
+        padding: 1rem 3rem;
     }
 
     &--1 {
@@ -17,6 +21,8 @@
         position: relative;
         top: 0rem;
         padding-bottom: 0;
+        display: flex;
+        justify-content: center;
     }
 
     &--3 {
@@ -35,16 +41,19 @@
     }
 
     &__text {
-        @include center-horizontal-vertical;
+        position: sticky;
+        top: 50%;
+        left: 20rem;
+        max-width: 650px;
         opacity: .85;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
-        &--1 {
-
-        }
-
-        &--2 {
-
+        @media only screen and (max-width: 992px) and (orientation: portrait), (max-height: 992px) and (orientation: landscape) {
+            position: sticky;
+            top: 50%;
+            left: unset;
+            transform: translate(0, -50%);
+            max-width: unset;
         }
     }
 
@@ -74,10 +83,7 @@
         line-height: 1.08;
         letter-spacing: -.04em;
         opacity: .9; //.7
-//        background-image: linear-gradient(to right, #30CFD0 0%, #330867 100%); //rgb(0, 3, 11)
         color: rgb(0, 0, 0); //transparent
-//        -webkit-background-clip: text;
-//        background-clip: text;
 
         @media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: portrait), (min-height: 1025px) and (max-height: 1366px) and (orientation: landscape) {
             font-size: 16rem;
@@ -90,18 +96,6 @@
         @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
             font-size: 12rem;
             padding-right: 1rem;
-        }
-
-        &--HTML5 {
-
-        }
-
-        &--CSS3 {
-
-        }
-
-        &--JavaScript {
-
         }
     }
 
@@ -117,7 +111,7 @@
         font-weight: 400;
 
         @media only screen and (max-width: 599px) and (orientation: portrait), (max-height: 599px) and (orientation: landscape) {
-            font-size: 5rem;
+            font-size: 3.25rem;
         }
     }
 }

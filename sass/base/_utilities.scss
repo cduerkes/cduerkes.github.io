@@ -1,9 +1,11 @@
+@use "../abstracts/variables";
+
 .u-center-text {
     text-align: center;
 }
 
 .u-red-text {
-  color: $color-red;
+  color: variables.$color-red;
 }
 
 .u-underline-text {
@@ -19,13 +21,17 @@
 }
 
 .u-white-text {
-  color: $color-white;
+  color: variables.$color-white;
 }
 
 // use utility classes to allow components to have better reusability
 
 .u-margin-bottom-small {
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 600px) and (orientation: portrait) {
+      margin-bottom: 4rem;
+    }
 }
 
 .u-margin-bottom-medium {

@@ -1,35 +1,16 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@use "abstracts/variables";
+@use "abstracts/mixins";
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@use "base/animations";
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
 
-@import "components/card";
-@import "components/section";
+@use "components/card";
+@use "components/section";
 
-@import "layout/footer";
-@import "layout/header";
-@import "layout/navigation";
+@use "layout/footer";
+@use "layout/header";
 
-@import "pages/home";
-
-.come-in {
-  transform: translateY(150px);
-  animation: 1.2s come-in ease forwards;
-}
-
-.come-in:nth-child(odd) {
-  animation-duration: 1s;
-}
-
-.already-visible {
-  transform: translateY(25px);
-  animation: come-in 1.2s ease forwards;
-}
-
-@keyframes come-in {
-  to { transform: translateY(0); }
-}
+@use "pages/home";
 
