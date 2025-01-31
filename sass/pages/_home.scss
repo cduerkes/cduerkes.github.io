@@ -39,7 +39,9 @@
     &__link {
         color: black;
         opacity: .9;
-        margin: 2rem auto;
+        min-height: 24px;
+        min-width: 24px;
+        display: inline-block;        
         text-decoration: none;
     }
 
