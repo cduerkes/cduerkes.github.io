@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+    "compile:sass": "sass sass/main.scss css/main.css -w"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,6 @@
   },
   "homepage": "https://github.com/cduerkes/cduerkes.github.io#readme",
   "devDependencies": {
-    "sass": "^1.83.4"
-  },
-  "dependencies": {
-    "node-sass": "npm:sass@^1.83.4"
+    "sass": "^1.89.2"
   }
 }
